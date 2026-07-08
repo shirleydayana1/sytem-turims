@@ -305,11 +305,3 @@
     padding: 30px 23px;
   }
 }
-/* PORTADA CARNAVALES INICIO */
-
-.heroImagen {
-  object-fit: cover;
-  object-position: center center;
-}
-
-/* PORTADA CARNAVALES FIN */

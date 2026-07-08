@@ -327,7 +327,7 @@
   color: #ffffff !important;
 }
 
-/* Verde original al pasar el mouse y en la pÃ¡gina activa */
+/* Verde original al pasar el mouse y en la página activa */
 .enlace:hover,
 .navLink:hover,
 .activo,
@@ -335,7 +335,7 @@
   color: #2ee80d !important;
 }
 
-/* LÃ­nea verde debajo del enlace */
+/* Línea verde debajo del enlace */
 .enlace::after,
 .navLink::after {
   background: #2ee80d !important;
@@ -347,7 +347,7 @@
   filter: drop-shadow(0 7px 8px rgba(0, 0, 0, 0.48)) !important;
 }
 
-/* BotÃ³n de hamburguesa */
+/* Botón de hamburguesa */
 .botonMenu,
 .menuButton {
   border-color: rgba(255, 255, 255, 0.65) !important;
@@ -359,7 +359,7 @@
   background: #ffffff !important;
 }
 
-/* MenÃº de celular */
+/* Menú de celular */
 .menuMovil,
 .mobileMenu {
   background: rgba(3, 23, 14, 0.97) !important;
@@ -367,69 +367,3 @@
 }
 
 /* COLORES ORIGINALES FIN */
-/* CORRECCION NAVBAR SOBRE IMAGEN INICIO */
-
-/*
-  El navbar queda encima de la imagen principal.
-  Ya no ocupa un espacio gris o blanco separado.
-*/
-.header {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  z-index: 9999 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.58) 0%,
-      rgba(0, 0, 0, 0.30) 65%,
-      rgba(0, 0, 0, 0.08) 100%
-    ) !important;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-/* Evitar fondos blancos dentro de la barra */
-.navbar {
-  background: transparent !important;
-}
-
-/* Letras blancas */
-.enlace {
-  color: #ffffff !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-}
-
-/* Enlace seleccionado y efecto hover */
-.enlace:hover,
-.activo {
-  color: #2ee80d !important;
-}
-
-/* Línea verde inferior */
-.enlace::after {
-  background: #2ee80d !important;
-}
-
-/* Mantener el logo centrado y sin fondo */
-.logoLink {
-  background: transparent !important;
-}
-
-.logoImagen {
-  background: transparent !important;
-  filter: drop-shadow(0 7px 9px rgba(0, 0, 0, 0.55)) !important;
-}
-
-/* Menú desplegable de celular */
-.menuMovil {
-  background: rgba(3, 23, 14, 0.97) !important;
-}
-
-/* CORRECCION NAVBAR SOBRE IMAGEN FIN */

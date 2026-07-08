@@ -8,43 +8,43 @@ const lugares = [
     nombre: "Catarata de Cornelio",
     imagen: "/imagenes/cornelio.jpg",
     descripcion:
-      "Una impresionante caída de agua rodeada de naturaleza, ideal para caminatas y fotografía."
+      "Una impresionante caída de agua rodeada de naturaleza, ideal para caminatas y fotografía.",
   },
   {
     id: 2,
     nombre: "Plaza de Armas de Celendín",
     imagen: "/imagenes/plaza.jpg",
     descripcion:
-      "El corazón de la ciudad, donde destacan su arquitectura, jardines y ambiente tradicional."
+      "El corazón de la ciudad, donde destacan su arquitectura y ambiente tradicional.",
   },
   {
     id: 3,
     nombre: "Iglesia Matriz",
     imagen: "/imagenes/iglesia.jpg",
     descripcion:
-      "Uno de los principales monumentos históricos y religiosos de Celendín."
+      "Uno de los principales monumentos históricos y religiosos de Celendín.",
   },
   {
     id: 4,
     nombre: "Mirador Natural",
     imagen: "/imagenes/mirador.jpg",
     descripcion:
-      "Desde este punto se aprecia una hermosa vista panorámica del valle de Celendín."
+      "Hermosa vista panorámica de todo Celendín.",
   },
   {
     id: 5,
     nombre: "Laguna El Milagro",
     imagen: "/imagenes/laguna.jpg",
     descripcion:
-      "Lugar ideal para disfrutar de la tranquilidad y el paisaje natural."
+      "Un paisaje natural perfecto para descansar y disfrutar.",
   },
   {
     id: 6,
     nombre: "Campo Celendino",
     imagen: "/imagenes/campo.jpg",
     descripcion:
-      "Paisajes verdes, agricultura y tradiciones que muestran la esencia de Celendín."
-  }
+      "Tradición, naturaleza y paisajes únicos.",
+  },
 ];
 
 export default function Turismo() {
@@ -54,7 +54,7 @@ export default function Turismo() {
         <h1>Turismo en Celendín</h1>
         <p>
           Descubre los principales atractivos turísticos de la provincia de
-          Celendín y vive una experiencia inolvidable.
+          Celendín.
         </p>
       </div>
 
@@ -69,6 +69,7 @@ export default function Turismo() {
 
             <div className={styles.contenido}>
               <h2>{lugar.nombre}</h2>
+
               <p>{lugar.descripcion}</p>
 
               <button className={styles.boton}>
