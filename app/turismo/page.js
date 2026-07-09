@@ -61,7 +61,7 @@ export default function Turismo() {
       <div className={styles.grid}>
         {lugares.map((lugar) => (
           <div className={styles.card} key={lugar.id}>
-            <img
+            <imge
               src={lugar.imagen}
               alt={lugar.nombre}
               className={styles.imagen}

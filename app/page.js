@@ -6,8 +6,7 @@ export default function Home() {
       <div className={styles.hero}>
         <h1>Bienvenidos a Celendín</h1>
         <p>
-          Descubre la riqueza cultural, gastronómica y turística de una de las
-          provincias más hermosas de Cajamarca.
+          Donde la naturaleza y la tradición se encuentran.
         </p>
         <button>Explorar</button>
       </div>

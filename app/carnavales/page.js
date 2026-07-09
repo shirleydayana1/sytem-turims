@@ -6,25 +6,25 @@ import styles from "./carnavales.module.css";
 const actividades = [
   {
     titulo: "Carnaval de la Hermandad",
-    fecha: "CelendÃ­n 2025",
+    fecha: "Celendín 2025",
     descripcion:
-      "Una celebraciÃ³n llena de mÃºsica, coplas, disfraces y participaciÃ³n de los barrios de CelendÃ­n.",
+      "Una celebración llena de música, coplas, disfraces y participación de los barrios de Celendín.",
     imagen:
       "https://img.youtube.com/vi/1-3YI1wEpaw/maxresdefault.jpg",
     video: "https://www.youtube.com/watch?v=1-3YI1wEpaw",
   },
   {
     titulo: "Carnaval del Recuerdo",
-    fecha: "CelendÃ­n 2024",
+    fecha: "Celendín 2024",
     descripcion:
-      "Una expresiÃ³n musical que recuerda las costumbres, personajes y alegrÃ­a del carnaval celendino.",
+      "Una expresión musical que recuerda las costumbres, personajes y alegría del carnaval celendino.",
     imagen:
       "https://img.youtube.com/vi/oLqwna4ClHs/maxresdefault.jpg",
     video: "https://www.youtube.com/watch?v=oLqwna4ClHs",
   },
   {
     titulo: "Barrios y comparsas",
-    fecha: "TradiciÃ³n celendina",
+    fecha: "Tradición celendina",
     descripcion:
       "Los barrios preparan sus comparsas, vestuarios y presentaciones para compartir su identidad y creatividad.",
     imagen:
@@ -33,9 +33,9 @@ const actividades = [
   },
   {
     titulo: "Desfile de patotas",
-    fecha: "MÃºsica y color",
+    fecha: "Música y color",
     descripcion:
-      "Grupos de amigos y vecinos recorren las calles con trajes, mÃºsica, baile y coplas tradicionales.",
+      "Grupos de amigos y vecinos recorren las calles con trajes, música, baile y coplas tradicionales.",
     imagen:
       "https://img.youtube.com/vi/q-_4SSFFV4o/maxresdefault.jpg",
     video: "https://www.youtube.com/watch?v=q-_4SSFFV4o",
@@ -65,7 +65,7 @@ const tradiciones = [
     icono: "ðŸŽ­",
     titulo: "Comparsas",
     texto:
-      "Delegaciones de barrios presentan vestuarios elaborados, personajes y coreografÃ­as.",
+      "Delegaciones de barrios presentan vestuarios elaborados, personajes y coreografías.",
   },
   {
     icono: "ðŸŽ¶",
@@ -77,7 +77,7 @@ const tradiciones = [
     icono: "ðŸ¥",
     titulo: "Patotas",
     texto:
-      "Grupos de vecinos y amigos recorren las calles bailando y compartiendo alegrÃ­a.",
+      "Grupos de vecinos y amigos recorren las calles bailando y compartiendo alegría.",
   },
   {
     icono: "ðŸ‘‘",
@@ -105,9 +105,9 @@ export default function CarnavalesPage() {
   return (
     <main className={styles.pagina}>
       <section className={styles.hero}>
-        <img
+        <imge
           src="/images/carnavales/portada-carnaval.jpg"
-          alt="Carnavales de CelendÃ­n"
+          alt="Carnavales de Celendín"
           className={styles.heroImagen}
           onError={(evento) => {
             evento.currentTarget.src = fallback;
@@ -117,13 +117,13 @@ export default function CarnavalesPage() {
         <div className={styles.overlay} />
 
         <div className={styles.heroContenido}>
-          <span className={styles.etiqueta}>Cultura y tradiciÃ³n</span>
+          <span className={styles.etiqueta}>Cultura y tradición</span>
 
-          <h1>Carnavales de CelendÃ­n</h1>
+          <h1>Carnavales de Celendín</h1>
 
           <p>
-            MÃºsica, comparsas, coplas, disfraces y barrios unidos para
-            celebrar una de las tradiciones mÃ¡s alegres de CelendÃ­n.
+            Música, comparsas, coplas, disfraces y barrios unidos para
+            celebrar una de las tradiciones más alegres de Celendín.
           </p>
 
           <a className={styles.boton} href="#actividades">
@@ -133,12 +133,12 @@ export default function CarnavalesPage() {
       </section>
 
       <section className={styles.introduccion}>
-        <span className={styles.sobreTitulo}>TradiciÃ³n celendina</span>
+        <span className={styles.sobreTitulo}>Tradición celendina</span>
 
         <h2>Una fiesta construida por sus barrios</h2>
 
         <p>
-          Familias, jÃ³venes, niÃ±os y adultos participan en la preparaciÃ³n
+          Familias, jovenes, niños y adultos participan en la preparación
           de comparsas, canciones, disfraces y presentaciones que recorren
           las calles de la ciudad.
         </p>
@@ -146,7 +146,7 @@ export default function CarnavalesPage() {
 
       <section id="actividades" className={styles.actividades}>
         <div className={styles.encabezado}>
-          <span>ImÃ¡genes reales</span>
+          <span>Imágenes reales</span>
           <h2>Momentos del carnaval</h2>
         </div>
 
@@ -154,7 +154,7 @@ export default function CarnavalesPage() {
           {actividades.map((actividad) => (
             <article className={styles.tarjeta} key={actividad.titulo}>
               <div className={styles.imagenContenedor}>
-                <img
+                <imge
                   src={actividad.imagen}
                   alt={actividad.titulo}
                   loading="lazy"
@@ -187,7 +187,7 @@ export default function CarnavalesPage() {
       <section className={styles.tradiciones}>
         <div className={styles.encabezadoClaro}>
           <span>Identidad cultural</span>
-          <h2>Lo que encontrarÃ¡s en el carnaval</h2>
+          <h2>Lo que encontrarás en el carnaval</h2>
         </div>
 
         <div className={styles.tradicionesGrid}>
@@ -203,12 +203,12 @@ export default function CarnavalesPage() {
 
       <section className={styles.llamada}>
         <div>
-          <span>MÃ¡s fotografÃ­as</span>
-          <h2>Conoce CelendÃ­n mediante nuestra galerÃ­a</h2>
+          <span>Más fotografías</span>
+          <h2>Conoce Celendín mediante nuestra galería</h2>
         </div>
 
         <Link href="/galeria" className={styles.botonOscuro}>
-          Abrir galerÃ­a
+          Abrir galería
         </Link>
       </section>
     </main>
