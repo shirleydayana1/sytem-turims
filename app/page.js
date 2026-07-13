@@ -4,11 +4,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.hero}>
-        <h1>Bienvenidos a Celendín</h1>
+
+        <span className={styles.subtitulo}>
+          BIENVENIDOS A
+        </span>
+        <h1> Celendín</h1>
+        <div className={styles.linea}></div>
         <p>
           Donde la naturaleza y la tradición se encuentran.
         </p>
-        <button>Explorar</button>
       </div>
     </main>
   );
