@@ -20,3 +20,14 @@ html {
   background: #37d20d;
   color: #ffffff;
 }
+/* CORRECCION-DE-TEXTOS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}

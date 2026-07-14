@@ -4,25 +4,25 @@ import styles from "./turismo.module.css";
 
 const experiencias = [
   {
-    icono: "🥾",
+    icono: "",
     titulo: "Caminatas",
     texto:
       "Recorre miradores, calles históricas, caminos rurales y espacios naturales.",
   },
   {
-    icono: "📷",
+    icono: "",
     titulo: "Fotografía",
     texto:
       "Captura paisajes, arquitectura, plazas y momentos de la vida celendina.",
   },
   {
-    icono: "🧺",
+    icono: "",
     titulo: "Artesanía",
     texto:
       "Conoce el trabajo de los artesanos y los tradicionales sombreros celendinos.",
   },
   {
-    icono: "🌿",
+    icono: "",
     titulo: "Naturaleza",
     texto:
       "Disfruta cascadas, montañas, valles y zonas ideales para descansar.",
@@ -242,7 +242,7 @@ export default function TurismoPage() {
               />
 
               <div className={styles.imageBadge}>
-                <span>📍</span>
+                <span></span>
                 <div>
                   <small>Destino</small>
                   <strong>Celendín, Cajamarca</strong>
@@ -309,14 +309,14 @@ export default function TurismoPage() {
                 </div>
 
                 <div className={styles.cardContent}>
-                  <span className={styles.cardZone}>📍 {lugar.zona}</span>
+                  <span className={styles.cardZone}> {lugar.zona}</span>
 
                   <h3>{lugar.nombre}</h3>
 
                   <p>{lugar.descripcion}</p>
 
                   <div className={styles.cardFooter}>
-                    <span>🚗 {lugar.distancia}</span>
+                    <span> {lugar.distancia}</span>
                     <span className={styles.cardArrow}>↗</span>
                   </div>
                 </div>

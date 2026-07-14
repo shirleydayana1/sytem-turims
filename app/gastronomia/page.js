@@ -68,19 +68,19 @@ const platos = [
 
 const caracteristicas = [
   {
-    icono: "🌽",
+    icono: "",
     titulo: "Ingredientes locales",
     texto:
       "Maíz, papa, mote, hierbas aromáticas, queso y productos cultivados en la región.",
   },
   {
-    icono: "🧀",
+    icono: "",
     titulo: "Tradición quesera",
     texto:
       "Cajamarca es reconocida por sus quesos, quesillos y derivados elaborados con leche.",
   },
   {
-    icono: "🍲",
+    icono: "",
     titulo: "Recetas familiares",
     texto:
       "Preparaciones transmitidas entre generaciones y presentes en fiestas y reuniones.",
