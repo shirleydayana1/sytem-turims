@@ -35,7 +35,7 @@ const lugares = [
     zona: "Centro de Celendín",
     tipo: "Arquitectura",
     distancia: "Centro de la ciudad",
-    imagen: "/images/turismo/plaza-armas.jpg",
+    imagen: "/turismo/01-plaza-de-armas.jpg",
     descripcion:
       "El corazón de Celendín, rodeado de jardines, árboles, construcciones tradicionales y espacios de encuentro.",
   },
@@ -44,7 +44,7 @@ const lugares = [
     zona: "Plaza Mayor",
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
-    imagen: "/images/turismo/iglesia-principal.jpg",
+    imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
     descripcion:
       "Uno de los edificios más representativos de Celendín por su arquitectura, historia e importancia religiosa.",
   },
@@ -53,7 +53,7 @@ const lugares = [
     zona: "Celendín",
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
-    imagen: "/images/turismo/mirador-san-isidro.jpg",
+    imagen: "/turismo/03-mirador-san-isidro.jpg",
     descripcion:
       "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
   },
@@ -62,7 +62,7 @@ const lugares = [
     zona: "Alrededores de Celendín",
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
-    imagen: "/images/turismo/cerro-jelij.jpg",
+    imagen: "/turismo/04-cerro-jelij.jpg",
     descripcion:
       "Elevación natural con impresionantes vistas de Celendín, sus valles y los paisajes cercanos al río Marañón.",
   },
@@ -71,7 +71,7 @@ const lugares = [
     zona: "Distrito de Sucre",
     tipo: "Cascada",
     distancia: "Aproximadamente 5 km",
-    imagen: "/images/turismo/cascada-la-novia.jpg",
+    imagen: "/turismo/05-cascada-la-novia.jpg",
     descripcion:
       "Una caída de agua cuyo movimiento recuerda la forma del vestido de una novia, especialmente en época de lluvias.",
   },
@@ -80,7 +80,7 @@ const lugares = [
     zona: "Provincia de Celendín",
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
-    imagen: "/images/turismo/langascocha.jpg",
+    imagen: "/turismo/06-langascocha.jpg",
     descripcion:
       "Caídas de agua y pequeñas pozas naturales rodeadas de vegetación, ideales para caminatas y fotografía.",
   },
@@ -89,7 +89,7 @@ const lugares = [
     zona: "Plaza Mayor",
     tipo: "Ciudad",
     distancia: "Centro de la ciudad",
-    imagen: "/images/turismo/municipalidad.jpg",
+    imagen: "/turismo/07-municipalidad.jpg",
     descripcion:
       "Edificio tradicional que forma parte de la imagen urbana y del recorrido por el centro histórico de Celendín.",
   },
@@ -98,7 +98,7 @@ const lugares = [
     zona: "Ciudad de Celendín",
     tipo: "Historia",
     distancia: "Recorrido a pie",
-    imagen: "/images/turismo/centro-historico.jpg",
+    imagen: "/turismo/08-centro-historico.jpg",
     descripcion:
       "Calles, viviendas tradicionales y balcones que permiten conocer la historia y el desarrollo urbano de la provincia.",
   },
@@ -107,7 +107,7 @@ const lugares = [
     zona: "Centro de Celendín",
     tipo: "Cultura",
     distancia: "Centro de la ciudad",
-    imagen: "/images/turismo/biblioteca.jpg",
+    imagen: "/turismo/09-biblioteca-municipal.jpg",
     descripcion:
       "Espacio dedicado a la lectura, la educación y la conservación de parte de la memoria cultural de Celendín.",
   },
@@ -116,7 +116,7 @@ const lugares = [
     zona: "Barrios de Celendín",
     tipo: "Identidad",
     distancia: "Recorrido urbano",
-    imagen: "/images/turismo/arquitectura-tradicional.jpg",
+    imagen: "/turismo/10-arquitectura-tradicional.jpg",
     descripcion:
       "Viviendas y construcciones que conservan detalles característicos de la arquitectura tradicional cajamarquina.",
   },
@@ -125,7 +125,7 @@ const lugares = [
     zona: "Alrededores de la ciudad",
     tipo: "Paisajes",
     distancia: "Distintos recorridos",
-    imagen: "/images/turismo/panorama-celendin.jpg",
+    imagen: "/turismo/11-paisajes-celendin.jpg",
     descripcion:
       "Montañas, campos, caminos rurales y valles forman los escenarios naturales que rodean la ciudad.",
   },
@@ -134,7 +134,7 @@ const lugares = [
     zona: "Mercados y talleres",
     tipo: "Tradición",
     distancia: "Dentro de la ciudad",
-    imagen: "/images/turismo/portada-turismo.jpg",
+    imagen: "/turismo/12-artesania-celendina.jpg",
     descripcion:
       "Celendín destaca por sus sombreros de paja, tejidos y productos elaborados por los artesanos de la provincia.",
   },
