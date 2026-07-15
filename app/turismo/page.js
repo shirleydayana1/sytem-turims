@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./turismo.module.css";
+"use client";
 
 const experiencias = [
   {
@@ -81,46 +79,80 @@ const lugares = [
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
+
+import styles from "./turismo.module.css";
+
+const lugares = [
+  {
+    id: 1,
+    nombre: "Catarata de Cornelio",
+    imagen: "/imagenes/cornelio.jpg",
+
     descripcion:
-      "Caídas de agua y pequeñas pozas naturales rodeadas de vegetación, ideales para caminatas y fotografía.",
+      "Una impresionante caída de agua rodeada de naturaleza, ideal para caminatas y fotografía.",
   },
   {
+
     nombre: "Municipalidad Provincial",
     zona: "Plaza Mayor",
     tipo: "Ciudad",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/07-municipalidad.jpg",
+
+    id: 2,
+    nombre: "Plaza de Armas de Celendín",
+    imagen: "/imagenes/plaza.jpg",
+
     descripcion:
-      "Edificio tradicional que forma parte de la imagen urbana y del recorrido por el centro histórico de Celendín.",
+      "El corazón de la ciudad, donde destacan su arquitectura y ambiente tradicional.",
   },
   {
+
     nombre: "Centro Histórico",
     zona: "Ciudad de Celendín",
     tipo: "Historia",
     distancia: "Recorrido a pie",
     imagen: "/turismo/08-centro-historico.jpg",
+
+    id: 3,
+    nombre: "Iglesia Matriz",
+    imagen: "/imagenes/iglesia.jpg",
+
     descripcion:
-      "Calles, viviendas tradicionales y balcones que permiten conocer la historia y el desarrollo urbano de la provincia.",
+      "Uno de los principales monumentos históricos y religiosos de Celendín.",
   },
   {
+
     nombre: "Biblioteca Municipal",
     zona: "Centro de Celendín",
     tipo: "Cultura",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/09-biblioteca-municipal.jpg",
+
+    id: 4,
+    nombre: "Mirador Natural",
+    imagen: "/imagenes/mirador.jpg",
+
     descripcion:
-      "Espacio dedicado a la lectura, la educación y la conservación de parte de la memoria cultural de Celendín.",
+      "Hermosa vista panorámica de todo Celendín.",
   },
   {
+
     nombre: "Arquitectura Tradicional",
     zona: "Barrios de Celendín",
     tipo: "Identidad",
     distancia: "Recorrido urbano",
     imagen: "/turismo/10-arquitectura-tradicional.jpg",
+
+    id: 5,
+    nombre: "Laguna El Milagro",
+    imagen: "/imagenes/laguna.jpg",
+
     descripcion:
-      "Viviendas y construcciones que conservan detalles característicos de la arquitectura tradicional cajamarquina.",
+      "Un paisaje natural perfecto para descansar y disfrutar.",
   },
   {
+
     nombre: "Paisajes de Celendín",
     zona: "Alrededores de la ciudad",
     tipo: "Paisajes",
@@ -137,17 +169,19 @@ const lugares = [
     imagen: "/turismo/12-artesania-celendina.jpg",
     descripcion:
       "Celendín destaca por sus sombreros de paja, tejidos y productos elaborados por los artesanos de la provincia.",
+
+    id: 6,
+    nombre: "Campo Celendino",
+    imagen: "/imagenes/campo.jpg",
+    descripcion:
+      "Tradición, naturaleza y paisajes únicos.",
+
   },
 ];
 
-export const metadata = {
-  title: "Turismo en Celendín",
-  description:
-    "Conoce los principales lugares turísticos, miradores, cascadas y atractivos culturales de Celendín.",
-};
-
-export default function TurismoPage() {
+export default function Turismo() {
   return (
+
     <main className={styles.page}>
       <section className={styles.hero}>
         <Image
@@ -408,5 +442,38 @@ export default function TurismoPage() {
         </div>
       </section>
     </main>
+
+    <section className={styles.turismo}>
+      <div className={styles.titulo}>
+        <h1>Turismo en Celendín</h1>
+        <p>
+          Descubre los principales atractivos turísticos de la provincia de
+          Celendín.
+        </p>
+      </div>
+
+      <div className={styles.grid}>
+        {lugares.map((lugar) => (
+          <div className={styles.card} key={lugar.id}>
+            <imge
+              src={lugar.imagen}
+              alt={lugar.nombre}
+              className={styles.imagen}
+            />
+
+            <div className={styles.contenido}>
+              <h2>{lugar.nombre}</h2>
+
+              <p>{lugar.descripcion}</p>
+
+              <button className={styles.boton}>
+                Conocer más
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
   );
 }

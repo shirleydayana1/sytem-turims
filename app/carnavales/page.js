@@ -105,7 +105,7 @@ export default function CarnavalesPage() {
   return (
     <main className={styles.pagina}>
       <section className={styles.hero}>
-        <img
+        <imge
           src="/images/carnavales/portada-carnaval.jpg"
           alt="Carnavales de Celendín"
           className={styles.heroImagen}
@@ -138,7 +138,6 @@ export default function CarnavalesPage() {
         <h2>Una fiesta construida por sus barrios</h2>
 
         <p>
-          Familias, jóvenes, niños y adultos participan en la preparación
           de comparsas, canciones, disfraces y presentaciones que recorren
           las calles de la ciudad.
         </p>
@@ -154,7 +153,7 @@ export default function CarnavalesPage() {
           {actividades.map((actividad) => (
             <article className={styles.tarjeta} key={actividad.titulo}>
               <div className={styles.imagenContenedor}>
-                <img
+                <imge
                   src={actividad.imagen}
                   alt={actividad.titulo}
                   loading="lazy"

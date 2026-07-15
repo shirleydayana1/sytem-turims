@@ -1,60 +1,109 @@
-.main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 120px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+.main{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:0 90px;
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.60),
+        rgba(0,0,0,.40),
+        rgba(0,0,0,.60)
+    ),
     url("/fondocelendin.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.hero {
+/* CONTENEDOR */
 
-  width: 600px;
-  color: white;
-  text-align: left;
-  animation: fade 1.2s ease;
-  margin-top: 70px;
+.hero{
 
+    width:600px;
+    color:white;
+    animation:fade 1.2s ease;
 }
 
-.hero h1 {
-  font-size: 68px;
-  line-height: 75px;
-  margin-bottom: 25px;
-  font-weight: 700;
 
+/* BIENVENIDOS A */
+
+.subtitulo{
+    display:block;
+    color:#D4A017;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:8px;
+    margin-bottom:20px;
 }
 
-.hero p {
-  font-size: 22px;
-  line-height: 38px;
-  margin-bottom: 35px;
-  color: #f5f5f5;
 
+/* TITULO */
+
+.hero h1{
+    font-size:92px;
+    font-weight:800;
+    line-height:90px;
+    margin-bottom:20px;
+    font-family:'Poppins',sans-serif;
 }
 
-.hero button {
-  padding: 16px 40px;
-  background: #39d10b;
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: .4s;
+
+/* LINEA */
+
+.linea{
+    width:120px;
+    height:4px;
+    background:#D4A017;
+    border-radius:10px;
+    margin-bottom:35px;
 }
 
-.hero button:hover {
-  background: white;
-  color: #39d10b;
-  transform: translateY(-5px);
+
+/* DESCRIPCION */
+
+.hero p{
+    font-size:26px;
+    line-height:40px;
+    color:#EEEEEE;
+    margin-bottom:45px;
+    max-width:520px;
+}
+
+
+/* BOTON */
+
+.hero button{
+    padding:18px 42px;
+    border:none;
+    border-radius:50px;
+    background:#D4A017;
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.hero button:hover{
+    background:#2A9DF4;
+    transform:translateY(-5px);
+}
+
+
+/* ANIMACION */
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 
 }

@@ -4,7 +4,6 @@ import styles from "./historia.module.css";
 export default function Historia() {
   return (
     <>
-      {/* ================= HERO ================= */}
       <section className={styles.hero}>
         <div className={styles.overlay}></div>
 
@@ -22,18 +21,18 @@ export default function Historia() {
           <p>
             Descubre los orígenes de una de las provincias más importantes de
             Cajamarca, reconocida por su riqueza histórica, cultural y el
-            espíritu trabajador de su gente.
+            espíritu trabajador de su gente.         
           </p>
         </div>
       </section>
 
-      {/* ================= INTRODUCCIÓN ================= */}
 
       <section className={styles.container}>
 
         <div className={styles.grid}>
 
           <div>
+
 
             <h2>Los orígenes de Celendín</h2>
 
@@ -42,10 +41,20 @@ export default function Historia() {
               Cajamarca, en la sierra norte del Perú. A lo largo de los años se
               ha convertido en un importante centro comercial, agrícola,
               artesanal y turístico gracias a su privilegiada ubicación y a la
+
+            <h2>Los origenes de celendin</h2>
+
+            <p>
+              Celendin es una provincia ubicada en el departamento de
+              Cajamarca, en la sierra norte del Peru. A lo largo de los aÃ±os se
+              ha convertido en un importante centro comercial, agricola,
+              artesanal y turistico gracias a su privilegiada ubicaciÃ³n y a la
+
               riqueza cultural heredada de sus antiguos pobladores.
             </p>
 
             <p>
+
               Su nombre está ligado a diversas teorías históricas. Algunos
               investigadores sostienen que proviene de antiguos pobladores
               llegados desde España, mientras que otros indican que tiene
@@ -70,7 +79,9 @@ export default function Historia() {
 
       </section>
 
+
       {/* ================= FUNDACIÓN ================= */}
+
 
       <section className={styles.sectionGray}>
 
@@ -94,6 +105,7 @@ export default function Historia() {
               <h2>Fundación de la ciudad</h2>
 
               <p>
+
                 La ciudad de Celendín fue fundada oficialmente durante la época
                 colonial. Desde entonces se convirtió en un importante punto de
                 intercambio comercial entre la costa y la sierra, favoreciendo
@@ -105,6 +117,19 @@ export default function Historia() {
                 agrícola, la producción ganadera y el desarrollo de la
                 artesanía, actividades que continúan siendo parte fundamental
                 de su economía.
+
+                La ciudad de Celendin fue fundada oficialmente durante la Ã©poca
+                colonial. Desde entonces se convirtiÃ³ en un importante punto de
+                intercambio comercial entre la costa y la sierra, favoreciendo
+                el crecimiento economico de toda la region.
+              </p>
+
+              <p>
+                Durante el Virreinato del PerÃº, Celendin destaca por el trabajo
+                agricola, la producciÃ³n ganadera y el desarrollo de la
+                artesania, actividades que continuan siendo parte fundamental
+                de su economia.
+
               </p>
 
             </div>
@@ -115,7 +140,9 @@ export default function Historia() {
 
       </section>
 
+
       {/* ================= LÍNEA DE TIEMPO ================= */}
+
 
       <section className={styles.timelineSection}>
 
@@ -186,8 +213,7 @@ export default function Historia() {
 
       </section>
 
-      {/* ================= CULTURA ================= */}
-
+      
       <section className={styles.container}>
 
         <h2 className={styles.center}>
@@ -256,7 +282,6 @@ export default function Historia() {
 
       </section>
 
-      {/* ================= FRASE FINAL ================= */}
 
       <section className={styles.final}>
 
