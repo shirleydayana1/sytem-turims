@@ -44,7 +44,7 @@ const actividades = [
     titulo: "Barrio Central",
     fecha: "Carnaval 2025",
     descripcion:
-      "Una de las presentaciones que muestra la organizaciÃ³n, el talento y la alegrÃ­a de los barrios.",
+      "Una de las presentaciones que muestra la organización, el talento y la alegría de los barrios.",
     imagen:
       "https://img.youtube.com/vi/nA2GDZ65RXM/maxresdefault.jpg",
     video: "https://www.youtube.com/watch?v=nA2GDZ65RXM",
@@ -53,7 +53,7 @@ const actividades = [
     titulo: "Barrio El Rosario",
     fecha: "Comparsas tradicionales",
     descripcion:
-      "Sus participantes conservan la tradiciÃ³n mediante disfraces, coplas y presentaciones familiares.",
+      "Sus participantes conservan la tradición mediante disfraces, coplas y presentaciones familiares.",
     imagen:
       "https://img.youtube.com/vi/twS7NIYH4sU/maxresdefault.jpg",
     video: "https://www.youtube.com/watch?v=twS7NIYH4sU",
@@ -71,7 +71,7 @@ const tradiciones = [
     icono: "ðŸŽ¶",
     titulo: "Coplas",
     texto:
-      "Canciones alegres, picarescas y tradicionales acompaÃ±an las celebraciones.",
+      "Canciones alegres, picarescas y tradicionales acompañan las celebraciones.",
   },
   {
     icono: "ðŸ¥",
@@ -95,7 +95,7 @@ const tradiciones = [
     icono: "ðŸ²",
     titulo: "Comida tradicional",
     texto:
-      "Las familias comparten platos tÃ­picos y bebidas tradicionales durante la fiesta.",
+      "Las familias comparten platos típicos y bebidas tradicionales durante la fiesta.",
   },
 ];
 
@@ -138,7 +138,6 @@ export default function CarnavalesPage() {
         <h2>Una fiesta construida por sus barrios</h2>
 
         <p>
-          Familias, jovenes, niños y adultos participan en la preparación
           de comparsas, canciones, disfraces y presentaciones que recorren
           las calles de la ciudad.
         </p>

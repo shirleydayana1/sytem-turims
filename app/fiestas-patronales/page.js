@@ -5,42 +5,42 @@ import styles from "./fiestasPatronales.module.css";
 const actividades = [
   {
     numero: "01",
-    icono: "⛪",
+    icono: "",
     titulo: "Celebraciones religiosas",
     descripcion:
       "Misas, novenas y actividades de fe que reúnen a las familias y visitantes de Celendín.",
   },
   {
     numero: "02",
-    icono: "🕯️",
+    icono: "",
     titulo: "Procesiones",
     descripcion:
       "Recorridos tradicionales por las principales calles acompañados por música, flores y devoción.",
   },
   {
     numero: "03",
-    icono: "🎺",
+    icono: "",
     titulo: "Bandas y música",
     descripcion:
       "Presentaciones musicales, bandas tradicionales y encuentros culturales que alegran la celebración.",
   },
   {
     numero: "04",
-    icono: "💃",
+    icono: "",
     titulo: "Danzas tradicionales",
     descripcion:
       "Danzas, comparsas y expresiones artísticas que representan la identidad cultural de Celendín.",
   },
   {
     numero: "05",
-    icono: "🧺",
+    icono: "",
     titulo: "Ferias artesanales",
     descripcion:
       "Exposición de sombreros, tejidos, artesanías y productos elaborados por emprendedores locales.",
   },
   {
     numero: "06",
-    icono: "🍲",
+    icono: "",
     titulo: "Gastronomía",
     descripcion:
       "Platos típicos, dulces y bebidas tradicionales preparados durante los días de celebración.",
@@ -176,7 +176,7 @@ export default function FiestasPatronalesPage() {
               />
 
               <div className={styles.imageInformation}>
-                <span>📍</span>
+                <span></span>
 
                 <div>
                   <small>Celebración</small>

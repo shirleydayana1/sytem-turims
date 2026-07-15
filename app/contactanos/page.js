@@ -53,7 +53,7 @@ export default function Contactanos() {
 
             <div className={styles.card}>
 
-              <div className={styles.icon}>📍</div>
+              <div className={styles.icon}></div>
 
               <h3>Dirección</h3>
 
@@ -67,7 +67,7 @@ export default function Contactanos() {
 
             <div className={styles.card}>
 
-              <div className={styles.icon}>📞</div>
+              <div className={styles.icon}></div>
 
               <h3>Teléfono</h3>
 
@@ -79,7 +79,7 @@ export default function Contactanos() {
 
             <div className={styles.card}>
 
-              <div className={styles.icon}>📧</div>
+              <div className={styles.icon}></div>
 
               <h3>Correo Electrónico</h3>
 
@@ -91,7 +91,7 @@ export default function Contactanos() {
 
             <div className={styles.card}>
 
-              <div className={styles.icon}>🕒</div>
+              <div className={styles.icon}></div>
 
               <h3>Horario</h3>
 
@@ -296,12 +296,12 @@ export default function Contactanos() {
           <div className={styles.socialGrid}>
 
             <div className={styles.socialCard}>
-              <h3>📘 Facebook</h3>
+              <h3> Facebook</h3>
               <p>Turismo Celendín</p>
             </div>
 
             <div className={styles.socialCard}>
-              <h3>📷 Instagram</h3>
+              <h3> Instagram</h3>
               <p>@turismocelendin</p>
             </div>
 
@@ -311,7 +311,7 @@ export default function Contactanos() {
             </div>
 
             <div className={styles.socialCard}>
-              <h3>💬 WhatsApp</h3>
+              <h3> WhatsApp</h3>
               <p>+51 999 999 999</p>
             </div>
 

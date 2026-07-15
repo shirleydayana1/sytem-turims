@@ -19,12 +19,13 @@ export default function Historia() {
           <h1>Historia de Celendín</h1>
 
           <p>
-            Descubre los origenes de una de las provincias mas importantes de
-            Cajamarca, reconocida por su riqueza historica, cultural y el
-            espiritu trabajador de su gente.
+            Descubre los orígenes de una de las provincias más importantes de
+            Cajamarca, reconocida por su riqueza histórica, cultural y el
+            espíritu trabajador de su gente.         
           </p>
         </div>
       </section>
+
 
       <section className={styles.container}>
 
@@ -32,21 +33,32 @@ export default function Historia() {
 
           <div>
 
+
+            <h2>Los orígenes de Celendín</h2>
+
+            <p>
+              Celendín es una provincia ubicada en el departamento de
+              Cajamarca, en la sierra norte del Perú. A lo largo de los años se
+              ha convertido en un importante centro comercial, agrícola,
+              artesanal y turístico gracias a su privilegiada ubicación y a la
+
             <h2>Los origenes de celendin</h2>
 
             <p>
-              Celendi­n es una provincia ubicada en el departamento de
+              Celendin es una provincia ubicada en el departamento de
               Cajamarca, en la sierra norte del Peru. A lo largo de los aÃ±os se
               ha convertido en un importante centro comercial, agricola,
-              artesanal y turi­stico gracias a su privilegiada ubicaciÃ³n y a la
+              artesanal y turistico gracias a su privilegiada ubicaciÃ³n y a la
+
               riqueza cultural heredada de sus antiguos pobladores.
             </p>
 
             <p>
-              Su nombre estÃ¡ ligado a diversas teorias historicas. Algunos
+
+              Su nombre está ligado a diversas teorías históricas. Algunos
               investigadores sostienen que proviene de antiguos pobladores
-              llegados desde EspaÃ±a, mientras que otros indican que tiene
-              relacion con pueblos indigenas que ocuparon la region mucho antes
+              llegados desde España, mientras que otros indican que tiene
+              relación con pueblos indígenas que ocuparon la región mucho antes
               de la llegada de los españoles.
             </p>
 
@@ -66,6 +78,9 @@ export default function Historia() {
         </div>
 
       </section>
+
+
+      {/* ================= FUNDACIÓN ================= */}
 
 
       <section className={styles.sectionGray}>
@@ -90,6 +105,19 @@ export default function Historia() {
               <h2>Fundación de la ciudad</h2>
 
               <p>
+
+                La ciudad de Celendín fue fundada oficialmente durante la época
+                colonial. Desde entonces se convirtió en un importante punto de
+                intercambio comercial entre la costa y la sierra, favoreciendo
+                el crecimiento económico de toda la región.
+              </p>
+
+              <p>
+                Durante el Virreinato del Perú, Celendín destacó por el trabajo
+                agrícola, la producción ganadera y el desarrollo de la
+                artesanía, actividades que continúan siendo parte fundamental
+                de su economía.
+
                 La ciudad de Celendin fue fundada oficialmente durante la Ã©poca
                 colonial. Desde entonces se convirtiÃ³ en un importante punto de
                 intercambio comercial entre la costa y la sierra, favoreciendo
@@ -101,6 +129,7 @@ export default function Historia() {
                 agricola, la producciÃ³n ganadera y el desarrollo de la
                 artesania, actividades que continuan siendo parte fundamental
                 de su economia.
+
               </p>
 
             </div>
@@ -111,7 +140,9 @@ export default function Historia() {
 
       </section>
 
-     
+
+      {/* ================= LÍNEA DE TIEMPO ================= */}
+
 
       <section className={styles.timelineSection}>
 

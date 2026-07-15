@@ -327,7 +327,7 @@
   color: #ffffff !important;
 }
 
-/* Verde original al pasar el mouse y en la pÃ¡gina activa */
+/* Verde original al pasar el mouse y en la página activa */
 .enlace:hover,
 .navLink:hover,
 .activo,
@@ -335,7 +335,7 @@
   color: #2ee80d !important;
 }
 
-/* LÃ­nea verde debajo del enlace */
+/* Línea verde debajo del enlace */
 .enlace::after,
 .navLink::after {
   background: #2ee80d !important;
@@ -347,7 +347,7 @@
   filter: drop-shadow(0 7px 8px rgba(0, 0, 0, 0.48)) !important;
 }
 
-/* BotÃ³n de hamburguesa */
+/* Botón de hamburguesa */
 .botonMenu,
 .menuButton {
   border-color: rgba(255, 255, 255, 0.65) !important;
@@ -359,7 +359,7 @@
   background: #ffffff !important;
 }
 
-/* MenÃº de celular */
+/* Menú de celular */
 .menuMovil,
 .mobileMenu {
   background: rgba(3, 23, 14, 0.97) !important;
