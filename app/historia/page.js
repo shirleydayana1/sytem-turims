@@ -17,7 +17,6 @@ export default function Historia() {
 
         <div className={styles.heroContent}>
           <h1>Historia de Celendín</h1>
-
           <p>
             Descubre los orígenes de una de las provincias más importantes de
             Cajamarca, reconocida por su riqueza histórica, cultural y el
@@ -43,13 +42,13 @@ export default function Historia() {
               artesanal y turístico gracias a su privilegiada ubicación y a la
 
             <h2>Los origenes de celendin</h2>
+            </p>
 
             <p>
               Celendin es una provincia ubicada en el departamento de
               Cajamarca, en la sierra norte del Peru. A lo largo de los aÃ±os se
               ha convertido en un importante centro comercial, agricola,
-              artesanal y turistico gracias a su privilegiada ubicaciÃ³n y a la
-
+              artesanal y turistico gracias a su privilegiada ubicacion y a la
               riqueza cultural heredada de sus antiguos pobladores.
             </p>
 
@@ -65,7 +64,6 @@ export default function Historia() {
           </div>
 
           <div className={styles.imageBox}>
-
             <Image
               src="/images/historia/origenes-celendin.png"
               alt="Celendín antiguo"
@@ -80,7 +78,6 @@ export default function Historia() {
       </section>
 
 
-      {/* ================= FUNDACIÓN ================= */}
 
 
       <section className={styles.sectionGray}>

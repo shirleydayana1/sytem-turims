@@ -1,5 +1,7 @@
 "use client";
-
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./turismo.module.css";
 const experiencias = [
   {
     icono: "",
@@ -79,105 +81,12 @@ const lugares = [
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
-
-import styles from "./turismo.module.css";
-
-const lugares = [
-  {
-    id: 1,
-    nombre: "Catarata de Cornelio",
-    imagen: "/imagenes/cornelio.jpg",
-
-    descripcion:
-      "Una impresionante caída de agua rodeada de naturaleza, ideal para caminatas y fotografía.",
-  },
-  {
-
-    nombre: "Municipalidad Provincial",
-    zona: "Plaza Mayor",
-    tipo: "Ciudad",
-    distancia: "Centro de la ciudad",
-    imagen: "/turismo/07-municipalidad.jpg",
-
-    id: 2,
-    nombre: "Plaza de Armas de Celendín",
-    imagen: "/imagenes/plaza.jpg",
-
-    descripcion:
-      "El corazón de la ciudad, donde destacan su arquitectura y ambiente tradicional.",
-  },
-  {
-
-    nombre: "Centro Histórico",
-    zona: "Ciudad de Celendín",
-    tipo: "Historia",
-    distancia: "Recorrido a pie",
-    imagen: "/turismo/08-centro-historico.jpg",
-
-    id: 3,
-    nombre: "Iglesia Matriz",
-    imagen: "/imagenes/iglesia.jpg",
-
-    descripcion:
-      "Uno de los principales monumentos históricos y religiosos de Celendín.",
-  },
-  {
-
-    nombre: "Biblioteca Municipal",
-    zona: "Centro de Celendín",
-    tipo: "Cultura",
-    distancia: "Centro de la ciudad",
-    imagen: "/turismo/09-biblioteca-municipal.jpg",
-
-    id: 4,
-    nombre: "Mirador Natural",
-    imagen: "/imagenes/mirador.jpg",
-
-    descripcion:
-      "Hermosa vista panorámica de todo Celendín.",
-  },
-  {
-
-    nombre: "Arquitectura Tradicional",
-    zona: "Barrios de Celendín",
-    tipo: "Identidad",
-    distancia: "Recorrido urbano",
-    imagen: "/turismo/10-arquitectura-tradicional.jpg",
-
-    id: 5,
-    nombre: "Laguna El Milagro",
-    imagen: "/imagenes/laguna.jpg",
-
-    descripcion:
-      "Un paisaje natural perfecto para descansar y disfrutar.",
-  },
-  {
-
-    nombre: "Paisajes de Celendín",
-    zona: "Alrededores de la ciudad",
-    tipo: "Paisajes",
-    distancia: "Distintos recorridos",
-    imagen: "/turismo/11-paisajes-celendin.jpg",
-    descripcion:
-      "Montañas, campos, caminos rurales y valles forman los escenarios naturales que rodean la ciudad.",
-  },
-  {
-    nombre: "Artesanía Celendina",
-    zona: "Mercados y talleres",
-    tipo: "Tradición",
-    distancia: "Dentro de la ciudad",
-    imagen: "/turismo/12-artesania-celendina.jpg",
-    descripcion:
-      "Celendín destaca por sus sombreros de paja, tejidos y productos elaborados por los artesanos de la provincia.",
-
-    id: 6,
-    nombre: "Campo Celendino",
-    imagen: "/imagenes/campo.jpg",
-    descripcion:
-      "Tradición, naturaleza y paisajes únicos.",
-
   },
 ];
+
+
+
+
 
 export default function Turismo() {
   return (
@@ -441,39 +350,9 @@ export default function Turismo() {
           </div>
         </div>
       </section>
+
+    
+
     </main>
-
-    <section className={styles.turismo}>
-      <div className={styles.titulo}>
-        <h1>Turismo en Celendín</h1>
-        <p>
-          Descubre los principales atractivos turísticos de la provincia de
-          Celendín.
-        </p>
-      </div>
-
-      <div className={styles.grid}>
-        {lugares.map((lugar) => (
-          <div className={styles.card} key={lugar.id}>
-            <imge
-              src={lugar.imagen}
-              alt={lugar.nombre}
-              className={styles.imagen}
-            />
-
-            <div className={styles.contenido}>
-              <h2>{lugar.nombre}</h2>
-
-              <p>{lugar.descripcion}</p>
-
-              <button className={styles.boton}>
-                Conocer más
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-
   );
 }
