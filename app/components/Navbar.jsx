@@ -22,10 +22,6 @@ export default function Navbar() {
         <ul className={styles.menu}>
 
           <li>
-            <Link href="/">Inicio</Link>
-          </li>
-
-          <li>
             <Link href="/historia">Historia</Link>
           </li>
 
@@ -36,11 +32,6 @@ export default function Navbar() {
           <li>
             <Link href="/gastronomia">Gastronomía</Link>
           </li>
-
-          <li>
-            <Link href="/contactanos">Contáctanos</Link>
-          </li>
-
         </ul>
 
       </nav>

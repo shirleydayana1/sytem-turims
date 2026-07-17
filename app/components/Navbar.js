@@ -1,25 +1,21 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 
-const enlacesIzquierda = [
-  { nombre: "Inicio", href: "/" },
+
+/* Enlaces del menú derecho */
+const enlacesDerecha = [
   { nombre: "Historia", href: "/historia" },
   { nombre: "Turismo", href: "/turismo" },
-  { nombre: "Carnavales", href: "/carnavales" },
+  { nombre: "Fiestas", href: "/fiestas" },
+  { nombre: "Gastronomia", href: "/gastronomia" },
+  { nombre: "Galeria", href: "/galeria" },
 ];
 
-const enlacesDerecha = [
-  { nombre: "Fiestas Patronales", href: "/fiestas-patronales" },
-  { nombre: "Gastronom\u00eda", href: "/gastronomia" },
-  { nombre: "Galer\u00eda", href: "/galeria" },
-  { nombre: "Cont\u00e1ctanos", href: "/contactanos" },
-];
-
+/*componente enlacemenu*/ 
 function EnlaceMenu({ enlace, pathname, cerrarMenu }) {
   const activo =
     pathname === enlace.href ||
@@ -36,55 +32,41 @@ function EnlaceMenu({ enlace, pathname, cerrarMenu }) {
   );
 }
 
+/*componente navbar*/ 
 export default function Navbar() {
   const pathname = usePathname();
   const [abierto, setAbierto] = useState(false);
-
-  useEffect(() => {
-    setAbierto(false);
-  }, [pathname]);
-
   return (
     <header className={styles.header}>
       <div className={styles.navbar}>
-        <nav className={`${styles.menuEscritorio} ${styles.menuIzquierdo}`}>
-          {enlacesIzquierda.map((enlace) => (
-            <EnlaceMenu
-              key={enlace.href}
-              enlace={enlace}
-              pathname={pathname}
-              cerrarMenu={() => setAbierto(false)}
-            />
-          ))}
-        </nav>
+        <div className={styles.logoContainer}>
+  <Link
+    href="/"
+    className={styles.logoLink}
+    aria-label="Ir al inicio"
+    onClick={() => setAbierto(false)}
+  >
+    <Image
+      src="/logo.png"
+      alt="Logo Turismo Celendín"
+      width={170}
+      height={130}
+      priority
+      className={styles.logoImagen}
+    />
+  </Link>
+</div>
 
-        <Link
-          href="/"
-          className={styles.logoLink}
-          aria-label="Ir al inicio"
-          onClick={() => setAbierto(false)}
-        >
-          <Image
-            src="/logo.png"
-            alt="Logo Turismo Celendin"
-            width={190}
-            height={150}
-            priority
-            className={styles.logoImagen}
-          />
-        </Link>
-
-        <nav className={`${styles.menuEscritorio} ${styles.menuDerecho}`}>
-          {enlacesDerecha.map((enlace) => (
-            <EnlaceMenu
-              key={enlace.href}
-              enlace={enlace}
-              pathname={pathname}
-              cerrarMenu={() => setAbierto(false)}
-            />
-          ))}
-        </nav>
-
+<nav className={styles.menuEscritorio}>
+  {enlacesDerecha.map((enlace) => (
+    <EnlaceMenu
+      key={enlace.href}
+      enlace={enlace}
+      pathname={pathname}
+      cerrarMenu={() => setAbierto(false)}
+    />
+  ))}
+</nav>
         <button
           type="button"
           className={`${styles.botonMenu} ${
@@ -100,20 +82,20 @@ export default function Navbar() {
         </button>
       </div>
 
-      <nav
-        className={`${styles.menuMovil} ${
-          abierto ? styles.menuMovilAbierto : ""
-        }`}
-      >
-        {[...enlacesIzquierda, ...enlacesDerecha].map((enlace) => (
-          <EnlaceMenu
-            key={enlace.href}
-            enlace={enlace}
-            pathname={pathname}
-            cerrarMenu={() => setAbierto(false)}
-          />
-        ))}
-      </nav>
+     <nav
+  className={`${styles.menuMovil} ${
+    abierto ? styles.menuMovilAbierto : ""
+  }`}
+>
+  {enlacesDerecha.map((enlace) => (
+    <EnlaceMenu
+      key={enlace.href}
+      enlace={enlace}
+      pathname={pathname}
+      cerrarMenu={() => setAbierto(false)}
+    />
+  ))}
+</nav>
     </header>
   );
 }

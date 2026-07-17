@@ -9,14 +9,14 @@ export default function Historia() {
 
         <Image
           src="/fondocelendin.png"
-          alt="Historia de Celendín"
+          alt="Tierra del Sombrero y del Cielo Azul"
           fill
           priority
           className={styles.heroImage}
         />
 
         <div className={styles.heroContent}>
-          <h1>Historia de Celendín</h1>
+          <h1>Tierra del Sombrero y del Cielo Azul.</h1>
           <p>
             Descubre los orígenes de una de las provincias más importantes de
             Cajamarca, reconocida por su riqueza histórica, cultural y el
@@ -31,34 +31,10 @@ export default function Historia() {
         <div className={styles.grid}>
 
           <div>
-
-
             <h2>Los orígenes de Celendín</h2>
-
             <p>
-              Celendín es una provincia ubicada en el departamento de
-              Cajamarca, en la sierra norte del Perú. A lo largo de los años se
-              ha convertido en un importante centro comercial, agrícola,
-              artesanal y turístico gracias a su privilegiada ubicación y a la
-
-            <h2>Los origenes de celendin</h2>
-            </p>
-
-            <p>
-              Celendin es una provincia ubicada en el departamento de
-              Cajamarca, en la sierra norte del Peru. A lo largo de los aÃ±os se
-              ha convertido en un importante centro comercial, agricola,
-              artesanal y turistico gracias a su privilegiada ubicacion y a la
-              riqueza cultural heredada de sus antiguos pobladores.
-            </p>
-
-            <p>
-
-              Su nombre está ligado a diversas teorías históricas. Algunos
-              investigadores sostienen que proviene de antiguos pobladores
-              llegados desde España, mientras que otros indican que tiene
-              relación con pueblos indígenas que ocuparon la región mucho antes
-              de la llegada de los españoles.
+              Durante la colonia, lo que hoy es la ciudad no existía como tal; era una enorme llanura llamada la Hacienda Pampa del Estero, de propiedad de la orden religiosa de los Jesuitas. Tras la expulsión de esta orden en 1767, las tierras pasaron a manos de la Corona española y luego a propietarios particulares.
+              Para finales del siglo XVIII, la zona empezó a poblarse de familias españolas, criollas y un importante contingente de descendientes de judíos conversos (sefardíes) y portugueses que buscaban refugio en zonas apartadas de la sierra para escapar del control estricto de la Santa Inquisición de Lima.
             </p>
 
           </div>
@@ -70,15 +46,10 @@ export default function Historia() {
               width={600}
               height={450}
             />
-
           </div>
-
         </div>
 
       </section>
-
-
-
 
       <section className={styles.sectionGray}>
 
@@ -98,35 +69,16 @@ export default function Historia() {
             </div>
 
             <div>
-
+              
               <h2>Fundación de la ciudad</h2>
-
               <p>
-
-                La ciudad de Celendín fue fundada oficialmente durante la época
-                colonial. Desde entonces se convirtió en un importante punto de
-                intercambio comercial entre la costa y la sierra, favoreciendo
-                el crecimiento económico de toda la región.
+                El verdadero nacimiento de Celendín ocurre gracias a la unión de sus pobladores y a la guía de un personaje clave: el obispo de Trujillo, Baltasar Jaime Martínez Compañón.
+                1780s El obispo Martínez Compañón visita la zona, ve el potencial del valle y diseña los primeros planos de una ciudad perfectamente simétrica, al estilo damero (como un tablero de ajedrez).
               </p>
 
               <p>
-                Durante el Virreinato del Perú, Celendín destacó por el trabajo
-                agrícola, la producción ganadera y el desarrollo de la
-                artesanía, actividades que continúan siendo parte fundamental
-                de su economía.
-
-                La ciudad de Celendin fue fundada oficialmente durante la Ã©poca
-                colonial. Desde entonces se convirtiÃ³ en un importante punto de
-                intercambio comercial entre la costa y la sierra, favoreciendo
-                el crecimiento economico de toda la region.
-              </p>
-
-              <p>
-                Durante el Virreinato del PerÃº, Celendin destaca por el trabajo
-                agricola, la producciÃ³n ganadera y el desarrollo de la
-                artesania, actividades que continuan siendo parte fundamental
-                de su economia.
-
+                1796: Los pobladores locales, liderados por el capitán Juan de Dios Burga, se organizan y logran comprar la Hacienda Pampa del Estero por 11,000 pesos para fundar formalmente su propia villa.
+                1802: El 19 de diciembre de 1802, el Rey Carlos IV de España firma la Real Cédula que aprueba oficialmente la fundación de la villa bajo el nombre de Amalia de Celendín.
               </p>
 
             </div>
