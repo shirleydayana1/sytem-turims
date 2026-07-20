@@ -5,42 +5,42 @@ import styles from "./fiestas.module.css";
 const actividades = [
   {
     numero: "01",
-    icono: "",
+    imagen: "/images/fiestas/virgen1.jpg",
     titulo: "Celebraciones religiosas",
     descripcion:
       "Misas, novenas y actividades de fe que reúnen a las familias y visitantes de Celendín.",
   },
   {
     numero: "02",
-    icono: "",
+    imagen: "",
     titulo: "Procesiones",
     descripcion:
       "Recorridos tradicionales por las principales calles acompañados por música, flores y devoción.",
   },
   {
     numero: "03",
-    icono: "",
+    imagen: "",
     titulo: "Bandas y música",
     descripcion:
       "Presentaciones musicales, bandas tradicionales y encuentros culturales que alegran la celebración.",
   },
   {
     numero: "04",
-    icono: "",
+    imagen: "",
     titulo: "Danzas tradicionales",
     descripcion:
       "Danzas, comparsas y expresiones artísticas que representan la identidad cultural de Celendín.",
   },
   {
     numero: "05",
-    icono: "",
+    imagen: "",
     titulo: "Ferias artesanales",
     descripcion:
       "Exposición de sombreros, tejidos, artesanías y productos elaborados por emprendedores locales.",
   },
   {
     numero: "06",
-    icono: "",
+    imagen: "",
     titulo: "Gastronomía",
     descripcion:
       "Platos típicos, dulces y bebidas tradicionales preparados durante los días de celebración.",
@@ -168,7 +168,7 @@ export default function FiestasPage() {
 
             <div className={styles.introductionImage}>
               <Image
-                src="/images/turismo/plaza-armas.jpg"
+                src="/images/fiestas/cristi.jpg"
                 alt="Plaza de Armas de Celendín"
                 fill
                 sizes="(max-width: 900px) 100vw, 48vw"
@@ -279,8 +279,8 @@ export default function FiestasPage() {
           <div className={styles.galleryGrid}>
             <div className={`${styles.galleryItem} ${styles.galleryLarge}`}>
               <Image
-                src="/images/turismo/panorama-celendin.jpg"
-                alt="Paisaje de Celendín"
+                src="/images/fiestas/virgen.jpg"
+                alt="virgen"
                 fill
                 sizes="(max-width: 800px) 100vw, 60vw"
                 className={styles.coverImage}
@@ -294,8 +294,8 @@ export default function FiestasPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/turismo/arquitectura-tradicional.jpg"
-                alt="Arquitectura tradicional de Celendín"
+                src="/images/fiestas/plazadearmas.jpg"
+                alt="plaza de armas"
                 fill
                 sizes="(max-width: 800px) 100vw, 40vw"
                 className={styles.coverImage}
@@ -309,16 +309,16 @@ export default function FiestasPage() {
 
             <div className={styles.galleryItem}>
               <Image
-                src="/images/turismo/portada-turismo.jpg"
-                alt="Vista del centro de Celendín"
+                src="/images/fiestas/castillos.jpg"
+                alt="castillos"
                 fill
                 sizes="(max-width: 800px) 100vw, 40vw"
                 className={styles.coverImage}
               />
 
               <div className={styles.galleryText}>
-                <span>Comunidad</span>
-                <strong>Encuentro de familias</strong>
+                <span>castillos</span>
+                <strong>castillos de celendin</strong>
               </div>
             </div>
           </div>
@@ -327,8 +327,8 @@ export default function FiestasPage() {
 
       <section className={styles.cta}>
         <Image
-          src="/images/turismo/iglesia-principal.jpg"
-          alt=""
+          src="/images/fiestas/platostipicos.jpg"
+          alt="Platos típicos de Celendín"
           fill
           sizes="100vw"
           className={styles.ctaImage}
