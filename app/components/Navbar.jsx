@@ -32,6 +32,9 @@ export default function Navbar() {
           <li>
             <Link href="/gastronomia">Gastronomía</Link>
           </li>
+                    <li>
+            <Link href="/fiestas-patronales">Fiestas-Patronales</Link>
+          </li>
         </ul>
 
       </nav>

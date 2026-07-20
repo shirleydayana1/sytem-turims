@@ -343,16 +343,9 @@ export default function Turismo() {
             <Link href="/galeria" className={styles.primaryButton}>
               Ver galería
             </Link>
-
-            <Link href="/contactanos" className={styles.secondaryButton}>
-              Contáctanos
-            </Link>
           </div>
         </div>
       </section>
-
-    
-
     </main>
   );
 }
