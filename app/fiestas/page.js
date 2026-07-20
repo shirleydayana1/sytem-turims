@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./fiestasPatronales.module.css";
+import styles from "./fiestas.module.css";
 
 const actividades = [
   {
@@ -76,7 +76,7 @@ export const metadata = {
     "Conoce las tradiciones, actividades religiosas y celebraciones culturales de las Fiestas Patronales de Celendín.",
 };
 
-export default function FiestasPatronalesPage() {
+export default function FiestasPage() {
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
@@ -349,10 +349,6 @@ export default function FiestasPatronalesPage() {
           <div className={styles.heroButtons}>
             <Link href="/turismo" className={styles.primaryButton}>
               Explorar turismo
-            </Link>
-
-            <Link href="/contactanos" className={styles.secondaryButton}>
-              Contáctanos
             </Link>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function Historia() {
         <div className={styles.grid}>
 
           <div>
-            <h2>Los orígenes de Celendín</h2>
+            <h2>Los Orígenes de Celendín</h2>
             <p>
               Durante la colonia, lo que hoy es la ciudad no existía como tal; era una enorme llanura llamada la Hacienda Pampa del Estero, de propiedad de la orden religiosa de los Jesuitas. Tras la expulsión de esta orden en 1767, las tierras pasaron a manos de la Corona española y luego a propietarios particulares.
               Para finales del siglo XVIII, la zona empezó a poblarse de familias españolas, criollas y un importante contingente de descendientes de judíos conversos (sefardíes) y portugueses que buscaban refugio en zonas apartadas de la sierra para escapar del control estricto de la Santa Inquisición de Lima.
@@ -60,7 +60,7 @@ export default function Historia() {
             <div className={styles.imageBox}>
 
               <Image
-                src="/images/historia/fundacion-celendin.png"
+                src="/images/historia/images.jpg"
                 alt="Fundación de Celendín"
                 width={600}
                 height={450}
@@ -88,10 +88,6 @@ export default function Historia() {
         </div>
 
       </section>
-
-
-      {/* ================= LÍNEA DE TIEMPO ================= */}
-
 
       <section className={styles.timelineSection}>
 
@@ -174,8 +170,8 @@ export default function Historia() {
           <div className={styles.infoCard}>
 
             <Image
-              src="/historia3.jpg"
-              alt="Sombreros"
+              src="/images/historia/sombreros.jpg"
+              alt="Sombrero"
               width={400}
               height={250}
             />
@@ -193,7 +189,7 @@ export default function Historia() {
           <div className={styles.infoCard}>
 
             <Image
-              src="/historia4.jpg"
+              src="/images/historia/danza.jpg"
               alt="Tradiciones"
               width={400}
               height={250}
@@ -212,7 +208,7 @@ export default function Historia() {
           <div className={styles.infoCard}>
 
             <Image
-              src="/historia5.jpg"
+              src="/images/historia/iglesia.jpg"
               alt="Arquitectura"
               width={400}
               height={250}
@@ -231,25 +227,6 @@ export default function Historia() {
 
       </section>
 
-
-      <section className={styles.final}>
-
-        <div className={styles.container}>
-
-          <h2>
-            Celendín: Historia, Cultura y Tradición
-          </h2>
-
-          <p>
-            Conocer la historia de Celendín es comprender el esfuerzo, la
-            identidad y las costumbres de un pueblo que ha sabido conservar sus
-            raíces mientras continúa desarrollándose como uno de los principales
-            destinos turísticos de la región Cajamarca.
-          </p>
-
-        </div>
-
-      </section>
 
     </>
   );
