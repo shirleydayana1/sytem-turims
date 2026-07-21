@@ -94,7 +94,7 @@ export default function Turismo() {
     <main className={styles.page}>
       <section className={styles.hero}>
         <Image
-          src="/images/turismo/portada-turismo.jpg"
+          src="/images/portadas/portadaTurismo.jpg"
           alt="Vista turística de Celendín"
           fill
           priority

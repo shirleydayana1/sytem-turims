@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className={styles.logo}>
 
         <Image
-          src="/logo.png"
+          src="/images/logo/logocelendin.png"
           alt="Logo Celendín"
           width={70}
           height={70}

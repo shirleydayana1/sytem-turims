@@ -8,7 +8,7 @@ export default function Historia() {
         <div className={styles.overlay}></div>
 
         <Image
-          src="/fondocelendin.png"
+          src="/images/portadas/portadahistoria.jpg"
           alt="Tierra del Sombrero y del Cielo Azul"
           fill
           priority
@@ -106,8 +106,7 @@ export default function Historia() {
               <h3>Pobladores Originarios</h3>
 
               <p>
-                Diversos pueblos ocuparon estas tierras desarrollando la
-                agricultura y el comercio entre comunidades vecinas.
+                Antes de la llegada de los españoles, la zona estaba habitada por diversos grupos originarios (con influencia Arawak y de la cultura Chachapoyas) y, posteriormente, por los Incas.
               </p>
 
             </div>
@@ -119,8 +118,7 @@ export default function Historia() {
               <h3>Fundación</h3>
 
               <p>
-                Celendín comienza su crecimiento como villa colonial gracias a
-                su ubicación estratégica y actividad económica.
+                Tras la conquista, las tierras pasaron a convertirse en haciendas administradas por encomenderos españoles.
               </p>
 
             </div>
@@ -132,9 +130,7 @@ export default function Historia() {
               <h3>Desarrollo</h3>
 
               <p>
-                La ciudad fortalece sus actividades comerciales, agrícolas y
-                ganaderas convirtiéndose en una de las más importantes de la
-                región.
+                pasó de ser una villa recién fundada a consolidarse como una ciudad independiente, agrícola y comercialmente pujante, además de ser escenario directo de acontecimientos clave de la historia del Perú.
               </p>
 
             </div>
@@ -146,8 +142,7 @@ export default function Historia() {
               <h3>Destino Turístico</h3>
 
               <p>
-                Hoy Celendín es reconocido por su patrimonio histórico,
-                gastronomía, naturaleza, cultura y hospitalidad.
+                Celendín se ha consolidado como un atractivo destino de turismo cultural, paisajístico y de aventura. Su valor radica en la combinación de un trazado urbano único, tradiciones vivas como la tejeduría de sombreros de paja.
               </p>
 
             </div>

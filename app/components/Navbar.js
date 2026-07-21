@@ -47,7 +47,7 @@ export default function Navbar() {
     onClick={() => setAbierto(false)}
   >
     <Image
-      src="/logo.png"
+      src="/images/logo/logocelendin.png"
       alt="Logo Turismo Celendín"
       width={170}
       height={130}
