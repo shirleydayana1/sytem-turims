@@ -4,25 +4,25 @@ import Image from "next/image";
 import styles from "./turismo.module.css";
 const experiencias = [
   {
-    icono: "",
+    icono: "/iconos/caminata-nordica.png",
     titulo: "Caminatas",
     texto:
       "Recorre miradores, calles históricas, caminos rurales y espacios naturales.",
   },
   {
-    icono: "",
+    icono: "/iconos/fotografo.png",
     titulo: "Fotografía",
     texto:
       "Captura paisajes, arquitectura, plazas y momentos de la vida celendina.",
   },
   {
-    icono: "",
+    icono: "/iconos/muneca.png",
     titulo: "Artesanía",
     texto:
       "Conoce el trabajo de los artesanos y los tradicionales sombreros celendinos.",
   },
   {
-    icono: "",
+    icono: "/iconos/dia-de-la-madre-tierra.png",
     titulo: "Naturaleza",
     texto:
       "Disfruta cascadas, montañas, valles y zonas ideales para descansar.",
@@ -41,7 +41,7 @@ const lugares = [
   },
   {
     nombre: "Iglesia Virgen del Carmen",
-    zona: "Plaza Mayor",
+    zona: "Plaza de Armas de Celendín",
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
@@ -81,6 +81,8 @@ const lugares = [
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
+    descripcion:
+      "hermosas caidas de agua rodeadas de abundante vegetacion, ideales para caminatas, fotografia y disfrutar de la naturaleza"
   },
 ];
 
@@ -158,6 +160,7 @@ export default function Turismo() {
               </p>
 
               <div className={styles.presentationStats}>
+
                 <div>
                   <strong>12+</strong>
                   <span>Lugares destacados</span>
@@ -177,7 +180,7 @@ export default function Turismo() {
 
             <div className={styles.presentationImage}>
               <Image
-                src="/images/turismo/panorama-celendin.jpg"
+                src="/turismo/zelendin.jpg"
                 alt="Paisaje panorámico de Celendín"
                 fill
                 sizes="(max-width: 900px) 100vw, 46vw"
@@ -200,9 +203,14 @@ export default function Turismo() {
                 className={styles.experienceCard}
                 key={experiencia.titulo}
               >
-                <div className={styles.experienceIcon}>
-                  {experiencia.icono}
-                </div>
+              <div className={styles.experienceIcon}>
+                <Image
+                  src={experiencia.icono}
+                  alt={experiencia.titulo}
+                  width={30}
+                  height={30}
+                />
+              </div>
 
                 <div>
                   <h3>{experiencia.titulo}</h3>
@@ -222,7 +230,7 @@ export default function Turismo() {
                 Lugares reales de la provincia
               </span>
 
-              <h2>Lugares turísticos destacados</h2>
+              <h2>Lugares Turísticos Destacados</h2>
             </div>
 
             <p>
@@ -274,7 +282,7 @@ export default function Turismo() {
           <div className={styles.tipsGrid}>
             <div className={styles.tipsImage}>
               <Image
-                src="/images/turismo/cerro-jelij.jpg"
+                src="/turismo/cerro.jpg"
                 alt="Montañas y naturaleza de Celendín"
                 fill
                 sizes="(max-width: 900px) 100vw, 50vw"
