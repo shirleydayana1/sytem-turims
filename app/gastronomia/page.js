@@ -4,21 +4,21 @@ const platos = [
   {
     nombre: "Caldo Verde",
     categoria: "Sopa tradicional",
-    imagen: "/images/gastronomia/caldo-verde.jpg",
+    imagen: "/images/gastronomia/caldo verde.jpg",
     descripcion:
       "Sopa tradicional de Cajamarca preparada con papa, quesillo, huevo y hierbas aromáticas. Es muy consumida durante los desayunos y las mañanas frías.",
   },
   {
     nombre: "Cuy Frito",
     categoria: "Cocina andina",
-    imagen: "/images/gastronomia/cuy-frito.jpg",
+    imagen: "/images/gastronomia/cuy frito.jpg",
     descripcion:
       "Plato representativo de la sierra peruana, servido con papas doradas, ensalada, mote y ají preparado de manera casera.",
   },
   {
     nombre: "Chicharrón con Mote",
     categoria: "Plato típico",
-    imagen: "/images/gastronomia/chicharron-mote.jpg",
+    imagen: "/images/gastronomia/chicharron.jpg",
     descripcion:
       "Carne de cerdo dorada y crocante acompañada de mote, papa, cancha y salsa criolla. Es ideal para compartir en familia.",
   },
@@ -32,28 +32,28 @@ const platos = [
   {
     nombre: "Tamales",
     categoria: "Desayuno tradicional",
-    imagen: "/images/gastronomia/tamales.jpg",
+    imagen: "/images/gastronomia/tamales1.jpg",
     descripcion:
       "Masa de maíz sazonada, rellena y cocida dentro de hojas. Es una preparación muy apreciada durante desayunos y celebraciones.",
   },
   {
     nombre: "Queso Cajamarquino",
     categoria: "Producto regional",
-    imagen: "/images/gastronomia/queso-cajamarca.jpg",
+    imagen: "/images/gastronomia/queso.jpg",
     descripcion:
       "Producto elaborado con leche de la región. Destaca por su textura, sabor y presencia en numerosos platos y desayunos tradicionales.",
   },
   {
-    nombre: "Mote con Queso",
+    nombre: "Quesillo con miel ",
     categoria: "Sabor campesino",
-    imagen: "/images/gastronomia/mote.jpg",
+    imagen: "/images/gastronomia/quesillo.jpg",
     descripcion:
-      "Una combinación sencilla y deliciosa de mote cocido con queso fresco o quesillo, tradicional en hogares y comunidades rurales.",
+      "postre tradicional andino que combina la textura suave y cremosa del queso fresco (quesillo) con la dulzura intensa y aromática de la miel de caña, de chancaca (panela) o de higo.",
   },
   {
     nombre: "Manjar Blanco",
     categoria: "Dulce tradicional",
-    imagen: "/images/gastronomia/manjar-blanco.jpg",
+    imagen: "/images/gastronomia/manjar.jpg",
     descripcion:
       "Dulce preparado principalmente con leche y azúcar, cocido lentamente hasta obtener una consistencia cremosa y un sabor intenso.",
   },
