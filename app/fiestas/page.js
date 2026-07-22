@@ -5,42 +5,42 @@ import styles from "./fiestas.module.css";
 const actividades = [
   {
     numero: "01",
-    imagen: "/images/fiestas/virgen1.jpg",
-    titulo: "Celebraciones religiosas",
+    imagen: "/images/fiestas/carnaval.jpg",
+    titulo: "Carnavales",
     descripcion:
-      "Misas, novenas y actividades de fe que reúnen a las familias y visitantes de Celendín.",
+      "Celebración llena de música, comparsas, juegos con agua, concursos y danzas tradicionales.",
   },
   {
     numero: "02",
-    imagen: "",
-    titulo: "Procesiones",
+    imagen: "/images/fiestas/fiestaspatronales.jpg",
+    titulo: "Fiestas Patronales",
     descripcion:
-      "Recorridos tradicionales por las principales calles acompañados por música, flores y devoción.",
+      "Festividad religiosa dedicada a la Virgen del Carmen con procesiones, actividades culturales y reuniones familiares.",
   },
   {
     numero: "03",
-    imagen: "",
-    titulo: "Bandas y música",
+    imagen: "/images/fiestas/aniversarioCelendin.jpg",
+    titulo: "aniversario celendin",
     descripcion:
-      "Presentaciones musicales, bandas tradicionales y encuentros culturales que alegran la celebración.",
+      "Celebración de la historia de la provincia mediante desfiles, actividades culturales y eventos protocolares.",
   },
   {
     numero: "04",
-    imagen: "",
-    titulo: "Danzas tradicionales",
+    imagen: "/images/fiestas/corrida.jpg",
+    titulo: "corrida de toros",
     descripcion:
-      "Danzas, comparsas y expresiones artísticas que representan la identidad cultural de Celendín.",
+      "Se torea más bonito que nunca y el toro de hoy es más noble que nunca. Eso no quiere decir que se toree mejor que nunca, ni que el toro sea más bravo que nunca ",
   },
   {
     numero: "05",
-    imagen: "",
+    imagen: "/images/fiestas/feriasArtesanales.jpg",
     titulo: "Ferias artesanales",
     descripcion:
       "Exposición de sombreros, tejidos, artesanías y productos elaborados por emprendedores locales.",
   },
   {
     numero: "06",
-    imagen: "",
+    imagen: "/images/fiestas/caldo.jpg",
     titulo: "Gastronomía",
     descripcion:
       "Platos típicos, dulces y bebidas tradicionales preparados durante los días de celebración.",
@@ -81,7 +81,7 @@ export default function FiestasPage() {
     <main className={styles.page}>
       <section className={styles.hero}>
         <Image
-          src="/images/turismo/iglesia-principal.jpg"
+          src="/images/portadas/fiestas-portada.jpg"
           alt="Iglesia principal de Celendín"
           fill
           priority
@@ -94,17 +94,17 @@ export default function FiestasPage() {
 
         <div className={styles.heroContent}>
           <span className={styles.heroTag}>
-            Fe • tradición • identidad
+            Tradición • Cultura • Celebración
           </span>
 
           <h1>
             Fiestas
-            <span>Patronales</span>
           </h1>
 
           <p>
-            Una celebración que reúne a las familias celendinas alrededor de
-            la fe, la música, las costumbres y la alegría de todo un pueblo.
+            Celendín celebra durante todo el año festividades religiosas,
+            carnavales, ferias y eventos culturales que mantienen vivas sus
+            tradiciones y reúnen a toda la comunidad.
           </p>
 
           <div className={styles.heroButtons}>
@@ -118,10 +118,6 @@ export default function FiestasPage() {
           </div>
         </div>
 
-        <a href="#tradicion" className={styles.scrollButton}>
-          <span>↓</span>
-          Descubre la celebración
-        </a>
       </section>
 
       <section id="tradicion" className={styles.introduction}>
@@ -195,7 +191,7 @@ export default function FiestasPage() {
               Vive la experiencia
             </span>
 
-            <h2>Actividades principales</h2>
+            <h2>Fiestas tradicionales de Celendín</h2>
 
             <p>
               Conoce algunas de las actividades religiosas, culturales y
@@ -206,21 +202,34 @@ export default function FiestasPage() {
           <div className={styles.activitiesGrid}>
             {actividades.map((actividad) => (
               <article
-                className={styles.activityCard}
-                key={actividad.titulo}
+               className={styles.activityCard}
+               key={actividad.titulo}
               >
-                <div className={styles.activityTop}>
-                  <span className={styles.activityIcon}>
-                    {actividad.icono}
-                  </span>
 
-                  <span className={styles.activityNumber}>
-                    {actividad.numero}
-                  </span>
+              <div className={styles.activityImage}>
+              <Image
+                src={actividad.imagen}
+                alt={actividad.titulo}
+                fill
+                sizes="(max-width:768px) 100vw, 33vw"
+                className={styles.coverImage}
+              />
                 </div>
 
-                <h3>{actividad.titulo}</h3>
-                <p>{actividad.descripcion}</p>
+                <div className={styles.activityContent}>
+
+                  <div className={styles.activityTop}>
+                    <span className={styles.activityNumber}>
+                      {actividad.numero}
+                    </span>
+                  </div>
+
+                  <h3>{actividad.titulo}</h3>
+
+                  <p>{actividad.descripcion}</p>
+
+                </div>
+
               </article>
             ))}
           </div>
