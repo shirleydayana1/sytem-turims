@@ -31,8 +31,10 @@ const experiencias = [
 
 const lugares = [
   {
-    nombre: "Plaza de Armas",
-    zona: "Centro de Celendín",
+< main
+    nombre: "Plaza de Armas de Celendín",
+    zona: "Plaza de Armas de Celendín",
+> main
     tipo: "Arquitectura",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/01-plaza-de-armas.jpg",
@@ -40,8 +42,10 @@ const lugares = [
       "El corazón de Celendín, rodeado de jardines, árboles, construcciones tradicionales y espacios de encuentro.",
   },
   {
-    nombre: "Iglesia Virgen del Carmen",
-    zona: "Plaza de Armas de Celendín",
+< main
+    nombre:"Iglesia Virgen del Carmen",
+    zona: "Iglesia Virgen del Carmen
+> main
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
@@ -49,8 +53,10 @@ const lugares = [
       "Uno de los edificios más representativos de Celendín por su arquitectura, historia e importancia religiosa.",
   },
   {
-    nombre: "Mirador San Isidro",
-    zona: "Celendín",
+< main
+    nombre:"Mirador San Isidro",
+    zona: "Mirador San Isidro",
+> main
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
     imagen: "/turismo/03-mirador-san-isidro.jpg",
@@ -58,8 +64,12 @@ const lugares = [
       "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
   },
   {
-    nombre: "Cerro Jelij",
-    zona: "Alrededores de Celendín",
+< main
+    nombre:"Cerro Jelij",
+    zona: "Cerro Jelij",
+
+  
+> main
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
     imagen: "/turismo/04-cerro-jelij.jpg",
@@ -68,7 +78,11 @@ const lugares = [
   },
   {
     nombre: "Cascada La Novia",
-    zona: "Distrito de Sucre",
+< main
+    zona: "Cascada La Novia",
+
+    
+> main
     tipo: "Cascada",
     distancia: "Aproximadamente 5 km",
     imagen: "/turismo/05-cascada-la-novia.jpg",
@@ -77,7 +91,11 @@ const lugares = [
   },
   {
     nombre: "Caídas de Agua Langascocha",
-    zona: "Provincia de Celendín",
+< main
+    zona: "Caídas de Agua Langascocha",
+
+    
+> main
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
@@ -85,10 +103,6 @@ const lugares = [
       "hermosas caidas de agua rodeadas de abundante vegetacion, ideales para caminatas, fotografia y disfrutar de la naturaleza"
   },
 ];
-
-
-
-
 
 export default function Turismo() {
   return (
@@ -232,12 +246,6 @@ export default function Turismo() {
 
               <h2>Lugares Turísticos Destacados</h2>
             </div>
-
-            <p>
-              Conoce atractivos urbanos, culturales y naturales de Celendín.
-              Cada lugar conserva una parte de la historia y belleza de la
-              provincia.
-            </p>
           </div>
 
           <div className={styles.placesGrid}>

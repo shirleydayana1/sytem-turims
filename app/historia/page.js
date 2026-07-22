@@ -16,16 +16,11 @@ export default function Historia() {
         />
 
         <div className={styles.heroContent}>
-          <h1>Tierra del Sombrero y del Cielo Azul.</h1>
-          <p>
-            Descubre los orígenes de una de las provincias más importantes de
-            Cajamarca, reconocida por su riqueza histórica, cultural y el
-            espíritu trabajador de su gente.         
-          </p>
+          
+          <h1>Tierra del Sombrero y </h1>
+          <span>del Cielo Azul</span>
         </div>
       </section>
-
-
       <section className={styles.container}>
 
         <div className={styles.grid}>
