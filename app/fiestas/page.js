@@ -1,6 +1,6 @@
 import styles from "./fiestas.module.css";
 
-import Hero from "./components/Hero";
+import Hero from "./components/hero";
 import Introduccion from "./components/Introduccion";
 import Actividades from "./components/Actividades";
 import Timeline from "./components/TimeLine";
