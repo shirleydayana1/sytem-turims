@@ -31,8 +31,10 @@ const experiencias = [
 
 const lugares = [
   {
+< main
     nombre: "Plaza de Armas de Celendín",
     zona: "Plaza de Armas de Celendín",
+> main
     tipo: "Arquitectura",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/01-plaza-de-armas.jpg",
@@ -40,8 +42,10 @@ const lugares = [
       "El corazón de Celendín, rodeado de jardines, árboles, construcciones tradicionales y espacios de encuentro.",
   },
   {
+< main
     nombre:"Iglesia Virgen del Carmen",
-    zona: "Iglesia Virgen del Carmen",
+    zona: "Iglesia Virgen del Carmen
+> main
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
@@ -49,8 +53,10 @@ const lugares = [
       "Uno de los edificios más representativos de Celendín por su arquitectura, historia e importancia religiosa.",
   },
   {
+< main
     nombre:"Mirador San Isidro",
     zona: "Mirador San Isidro",
+> main
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
     imagen: "/turismo/03-mirador-san-isidro.jpg",
@@ -58,8 +64,12 @@ const lugares = [
       "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
   },
   {
+< main
     nombre:"Cerro Jelij",
     zona: "Cerro Jelij",
+
+  
+> main
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
     imagen: "/turismo/04-cerro-jelij.jpg",
@@ -68,7 +78,11 @@ const lugares = [
   },
   {
     nombre: "Cascada La Novia",
+< main
     zona: "Cascada La Novia",
+
+    
+> main
     tipo: "Cascada",
     distancia: "Aproximadamente 5 km",
     imagen: "/turismo/05-cascada-la-novia.jpg",
@@ -77,7 +91,11 @@ const lugares = [
   },
   {
     nombre: "Caídas de Agua Langascocha",
+< main
     zona: "Caídas de Agua Langascocha",
+
+    
+> main
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
@@ -141,7 +159,7 @@ export default function Turismo() {
                 Turismo, cultura y naturaleza
               </span>
 
-              <h2>Una provincia llena de lugares por descubrir</h2>
+              <h2>Una Provincia Llena de Lugares por Descubrir</h2>
 
               <p>
                 Celendín ofrece recorridos por su centro histórico, paisajes
@@ -258,7 +276,7 @@ export default function Turismo() {
 
                   <div className={styles.cardFooter}>
                     <span> {lugar.distancia}</span>
-                    
+                    <span className={styles.cardArrow}>↗</span>
                   </div>
                 </div>
               </article>
@@ -282,7 +300,6 @@ export default function Turismo() {
 
             <div className={styles.tipsContent}>
               <span className={styles.eyebrow}>Prepara tu recorrido</span>
-
               <h2>Disfruta Celendín de forma segura</h2>
 
               <p>
