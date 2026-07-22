@@ -5,42 +5,42 @@ import styles from "./galeria.module.css";
 
 const imagenes = [
   {
-    src: "/images/galeria/celendin-panoramica.jpg",
-    titulo: "Paisaje de Celendín",
+    src: "/images/galeria/langascocha.jpg",
+    titulo: "langascocha",
     categoria: "Naturaleza",
   },
   {
-    src: "/images/galeria/plaza-armas-1.jpg",
+    src: "/images/galeria/plaza_celendin.jpg",
     titulo: "Plaza de Armas",
     categoria: "Ciudad",
   },
   {
-    src: "/images/galeria/catedral-celendin.jpg",
+    src: "/images/galeria/iglesia_celendina.jpg",
     titulo: "Catedral de Celendín",
     categoria: "Arquitectura",
   },
   {
-    src: "/images/galeria/plaza-armas-2.jpg",
-    titulo: "Jardines de la plaza",
+    src: "/images/galeria/alameda.jpg",
+    titulo: "La alameda",
     categoria: "Turismo",
   },
   {
-    src: "/images/galeria/calle-celendin.jpg",
-    titulo: "Calles de Celendín",
+    src: "/images/galeria/pamapa_grande.jpg",
+    titulo: "Pampa Grande",
     categoria: "Historia",
   },
   {
-    src: "/images/galeria/municipalidad-celendin.jpg",
-    titulo: "Municipalidad de Celendín",
-    categoria: "Arquitectura",
+    src: "/images/galeria/sombrero1.jpg",
+    titulo: "el sombrero",
+    categoria: "Parques",
   },
   {
-    src: "/images/galeria/plaza-armas-3.jpg",
-    titulo: "Centro histórico",
+    src: "/images/galeria/san_isidro.jpg",
+    titulo: "san isidro",
     categoria: "Ciudad",
   },
   {
-    src: "/images/galeria/celendin-antiguo.jpg",
+    src: "/images/galeria/antiguo.jpg",
     titulo: "Celendín antiguo",
     categoria: "Memoria histórica",
   },
