@@ -31,10 +31,8 @@ const experiencias = [
 
 const lugares = [
   {
-< main
     nombre: "Plaza de Armas de Celendín",
     zona: "Plaza de Armas de Celendín",
-> main
     tipo: "Arquitectura",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/01-plaza-de-armas.jpg",
@@ -42,10 +40,8 @@ const lugares = [
       "El corazón de Celendín, rodeado de jardines, árboles, construcciones tradicionales y espacios de encuentro.",
   },
   {
-< main
     nombre:"Iglesia Virgen del Carmen",
-    zona: "Iglesia Virgen del Carmen
-> main
+    zona: "Iglesia Virgen del Carmen",
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
@@ -53,23 +49,17 @@ const lugares = [
       "Uno de los edificios más representativos de Celendín por su arquitectura, historia e importancia religiosa.",
   },
   {
-< main
     nombre:"Mirador San Isidro",
     zona: "Mirador San Isidro",
-> main
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
     imagen: "/turismo/03-mirador-san-isidro.jpg",
     descripcion:
-      "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
+     "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
   },
   {
-< main
-    nombre:"Cerro Jelij",
+    nombre: "Cerro Jelij",
     zona: "Cerro Jelij",
-
-  
-> main
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
     imagen: "/turismo/04-cerro-jelij.jpg",
@@ -78,24 +68,16 @@ const lugares = [
   },
   {
     nombre: "Cascada La Novia",
-< main
     zona: "Cascada La Novia",
-
-    
-> main
     tipo: "Cascada",
     distancia: "Aproximadamente 5 km",
     imagen: "/turismo/05-cascada-la-novia.jpg",
     descripcion:
-      "Una caída de agua cuyo movimiento recuerda la forma del vestido de una novia, especialmente en época de lluvias.",
+     "Una caída de agua cuyo movimiento recuerda la forma del vestido de una novia, especialmente en época de lluvias.",
   },
   {
     nombre: "Caídas de Agua Langascocha",
-< main
     zona: "Caídas de Agua Langascocha",
-
-    
-> main
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
@@ -144,11 +126,6 @@ export default function Turismo() {
             </Link>
           </div>
         </div>
-
-        <a href="#presentacion" className={styles.scrollIndicator}>
-          <span />
-          Desliza para descubrir
-        </a>
       </section>
 
       <section id="presentacion" className={styles.presentation}>
@@ -276,7 +253,6 @@ export default function Turismo() {
 
                   <div className={styles.cardFooter}>
                     <span> {lugar.distancia}</span>
-                    <span className={styles.cardArrow}>↗</span>
                   </div>
                 </div>
               </article>
@@ -347,7 +323,7 @@ export default function Turismo() {
         <div className={styles.ctaContent}>
           <span>Vive una experiencia inolvidable</span>
 
-          <h2>Celendín te espera</h2>
+          <h2>Celendín te Espera</h2>
 
           <p>
             Descubre sus paisajes, comparte con su gente y conoce las
