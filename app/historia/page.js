@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import SeccionTextoImagen from "./components/SeccionTextoImagen";
-import Timeline from "./components/Timeline";
+import Timeline from "./components/TimeLine";
 import Cultura from "./components/Cultura";
 
 export default function Historia() {
