@@ -537,7 +537,7 @@
   bottom: 18px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: #61da72;
+  background: #09e727;
   color: #0d2317;
   font-size: .72rem;
   font-weight: 800;
@@ -553,7 +553,7 @@
 /*zona*/
 .cardZone {
   display: inline-block;
-  color: #79df89;
+  color:#278849;
   font-size: .76rem;
   font-weight: 700;
   text-transform: uppercase;

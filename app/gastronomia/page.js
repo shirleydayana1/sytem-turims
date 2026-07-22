@@ -32,7 +32,7 @@ const platos = [
   {
     nombre: "Tamales",
     categoria: "Desayuno tradicional",
-    imagen: "/images/gastronomia/tamales1.jpg",
+    imagen: "/images/gastronomia/tamales.jpg",
     descripcion:
       "Masa de maíz sazonada, rellena y cocida dentro de hojas. Es una preparación muy apreciada durante desayunos y celebraciones.",
   },
