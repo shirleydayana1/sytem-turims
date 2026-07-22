@@ -1,44 +1,41 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
+import Logo from "./Logo";
+import MenuEscritorio from "./MenuEscritorio";
+import MenuMovil from "./MenuMovil";
+import BotonMenu from "./BotonMenu";
+import { enlacesDerecha } from "./navbarData";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const [abierto, setAbierto] = useState(false);
+
+  const cerrarMenu = () => setAbierto(false);
+  const alternarMenu = () => setAbierto((valor) => !valor);
+
   return (
     <header className={styles.header}>
+      <div className={styles.navbar}>
+        <Logo onClick={cerrarMenu} />
 
-      <div className={styles.logo}>
-
-        <Image
-          src="/images/logo/logocelendin.png"
-          alt="Logo Celendín"
-          width={70}
-          height={70}
+        <MenuEscritorio
+          enlaces={enlacesDerecha}
+          pathname={pathname}
+          cerrarMenu={cerrarMenu}
         />
 
+        <BotonMenu abierto={abierto} onClick={alternarMenu} />
       </div>
 
-      <nav>
-
-        <ul className={styles.menu}>
-
-          <li>
-            <Link href="/historia">Historia</Link>
-          </li>
-
-          <li>
-            <Link href="/turismo">Turismo</Link>
-          </li>
-
-          <li>
-            <Link href="/gastronomia">Gastronomía</Link>
-          </li>
-                    <li>
-            <Link href="/fiestas-patronales">Fiestas-Patronales</Link>
-          </li>
-        </ul>
-
-      </nav>
-
+      <MenuMovil
+        enlaces={enlacesDerecha}
+        pathname={pathname}
+        abierto={abierto}
+        cerrarMenu={cerrarMenu}
+      />
     </header>
   );
 }

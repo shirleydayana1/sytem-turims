@@ -1,223 +1,49 @@
-import Image from "next/image";
-import styles from "./historia.module.css";
+import Hero from "./components/Hero";
+import SeccionTextoImagen from "./components/SeccionTextoImagen";
+import Timeline from "./components/Timeline";
+import Cultura from "./components/Cultura";
 
 export default function Historia() {
   return (
     <>
-      <section className={styles.hero}>
-        <div className={styles.overlay}></div>
-
-        <Image
-          src="/images/portadas/portadahistoria.jpg"
-          alt="Tierra del Sombrero y del Cielo Azul"
-          fill
-          priority
-          className={styles.heroImage}
-        />
-
-        <div className={styles.heroContent}>
-          
-          <h1>Tierra del Sombrero y </h1>
-          <span>del Cielo Azul</span>
-        </div>
-      </section>
-      <section className={styles.container}>
-
-        <div className={styles.grid}>
-
-          <div>
-            <h2>Los Orígenes de Celendín</h2>
-            <p>
-              Durante la colonia, lo que hoy es la ciudad no existía como tal; era una enorme llanura llamada la Hacienda Pampa del Estero, de propiedad de la orden religiosa de los Jesuitas. Tras la expulsión de esta orden en 1767, las tierras pasaron a manos de la Corona española y luego a propietarios particulares.
-              Para finales del siglo XVIII, la zona empezó a poblarse de familias españolas, criollas y un importante contingente de descendientes de judíos conversos (sefardíes) y portugueses que buscaban refugio en zonas apartadas de la sierra para escapar del control estricto de la Santa Inquisición de Lima.
-            </p>
-
-          </div>
-
-          <div className={styles.imageBox}>
-            <Image
-              src="/images/historia/origenes-celendin.png"
-              alt="Celendín antiguo"
-              width={600}
-              height={450}
-            />
-          </div>
-        </div>
-
-      </section>
-
-      <section className={styles.sectionGray}>
-
-        <div className={styles.container}>
-
-          <div className={styles.gridReverse}>
-
-            <div className={styles.imageBox}>
-
-              <Image
-                src="/images/historia/images.jpg"
-                alt="Fundación de Celendín"
-                width={600}
-                height={450}
-              />
-
-            </div>
-
-            <div>
-              
-              <h2>Fundación de la ciudad</h2>
-              <p>
-                El verdadero nacimiento de Celendín ocurre gracias a la unión de sus pobladores y a la guía de un personaje clave: el obispo de Trujillo, Baltasar Jaime Martínez Compañón.
-                1780s El obispo Martínez Compañón visita la zona, ve el potencial del valle y diseña los primeros planos de una ciudad perfectamente simétrica, al estilo damero (como un tablero de ajedrez).
-              </p>
-
-              <p>
-                1796: Los pobladores locales, liderados por el capitán Juan de Dios Burga, se organizan y logran comprar la Hacienda Pampa del Estero por 11,000 pesos para fundar formalmente su propia villa.
-                1802: El 19 de diciembre de 1802, el Rey Carlos IV de España firma la Real Cédula que aprueba oficialmente la fundación de la villa bajo el nombre de Amalia de Celendín.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <section className={styles.timelineSection}>
-
-        <div className={styles.container}>
-
-          <h2 className={styles.center}>
-            Línea del Tiempo
-          </h2>
-
-          <div className={styles.timeline}>
-
-            <div className={styles.card}>
-
-              <span>Antes del siglo XVI</span>
-
-              <h3>Pobladores Originarios</h3>
-
-              <p>
-                Antes de la llegada de los españoles, la zona estaba habitada por diversos grupos originarios (con influencia Arawak y de la cultura Chachapoyas) y, posteriormente, por los Incas.
-              </p>
-
-            </div>
-
-            <div className={styles.card}>
-
-              <span>Época Colonial</span>
-
-              <h3>Fundación</h3>
-
-              <p>
-                Tras la conquista, las tierras pasaron a convertirse en haciendas administradas por encomenderos españoles.
-              </p>
-
-            </div>
-
-            <div className={styles.card}>
-
-              <span>Siglo XIX</span>
-
-              <h3>Desarrollo</h3>
-
-              <p>
-                pasó de ser una villa recién fundada a consolidarse como una ciudad independiente, agrícola y comercialmente pujante, además de ser escenario directo de acontecimientos clave de la historia del Perú.
-              </p>
-
-            </div>
-
-            <div className={styles.card}>
-
-              <span>Actualidad</span>
-
-              <h3>Destino Turístico</h3>
-
-              <p>
-                Celendín se ha consolidado como un atractivo destino de turismo cultural, paisajístico y de aventura. Su valor radica en la combinación de un trazado urbano único, tradiciones vivas como la tejeduría de sombreros de paja.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      
-      <section className={styles.container}>
-
-        <h2 className={styles.center}>
-          Cultura y Tradiciones
-        </h2>
-
-        <div className={styles.cards}>
-
-          <div className={styles.infoCard}>
-
-            <Image
-              src="/images/historia/sombreros.jpg"
-              alt="Sombrero"
-              width={400}
-              height={250}
-            />
-
-            <h3>Sombreros de Paja</h3>
-
-            <p>
-              Celendín es reconocido a nivel nacional por la elaboración
-              artesanal de sombreros de paja, una tradición transmitida de
-              generación en generación.
-            </p>
-
-          </div>
-
-          <div className={styles.infoCard}>
-
-            <Image
-              src="/images/historia/danza.jpg"
-              alt="Tradiciones"
-              width={400}
-              height={250}
-            />
-
-            <h3>Tradiciones</h3>
-
-            <p>
-              Sus festividades religiosas, ferias patronales y expresiones
-              culturales reflejan la identidad y el orgullo del pueblo
-              celendino.
-            </p>
-
-          </div>
-
-          <div className={styles.infoCard}>
-
-            <Image
-              src="/images/historia/iglesia.jpg"
-              alt="Arquitectura"
-              width={400}
-              height={250}
-            />
-
-            <h3>Arquitectura Colonial</h3>
-
-            <p>
-              Las casonas, iglesias y plazas conservan una arquitectura que
-              recuerda el importante legado colonial de la ciudad.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
+      <Hero
+        src="/images/portadas/portadahistoria.jpg"
+        alt="Tierra del Sombrero y del Cielo Azul"
+        titulo="Tierra del Sombrero y"
+        subtitulo="del Cielo Azul"
+      />
+
+      <SeccionTextoImagen
+        titulo="Los Orígenes de Celendín"
+        parrafos={[
+          "Durante la colonia, lo que hoy es la ciudad no existía como tal; era una enorme llanura llamada la Hacienda Pampa del Estero, de propiedad de la orden religiosa de los Jesuitas. Tras la expulsión de esta orden en 1767, las tierras pasaron a manos de la Corona española y luego a propietarios particulares. Para finales del siglo XVIII, la zona empezó a poblarse de familias españolas, criollas y un importante contingente de descendientes de judíos conversos (sefardíes) y portugueses que buscaban refugio en zonas apartadas de la sierra para escapar del control estricto de la Santa Inquisición de Lima.",
+        ]}
+        imagen={{
+          src: "/images/historia/origenes-celendin.png",
+          alt: "Celendín antiguo",
+          width: 600,
+          height: 450,
+        }}
+      />
+
+      <SeccionTextoImagen
+        titulo="Fundación de la ciudad"
+        parrafos={[
+          "El verdadero nacimiento de Celendín ocurre gracias a la unión de sus pobladores y a la guía de un personaje clave: el obispo de Trujillo, Baltasar Jaime Martínez Compañón. 1780s El obispo Martínez Compañón visita la zona, ve el potencial del valle y diseña los primeros planos de una ciudad perfectamente simétrica, al estilo damero (como un tablero de ajedrez).",
+          "1796: Los pobladores locales, liderados por el capitán Juan de Dios Burga, se organizan y logran comprar la Hacienda Pampa del Estero por 11,000 pesos para fundar formalmente su propia villa. 1802: El 19 de diciembre de 1802, el Rey Carlos IV de España firma la Real Cédula que aprueba oficialmente la fundación de la villa bajo el nombre de Amalia de Celendín.",
+        ]}
+        imagen={{
+          src: "/images/historia/images.jpg",
+          alt: "Fundación de Celendín",
+          width: 600,
+          height: 450,
+        }}
+        reverse
+        fondoGris
+      />
+
+      <Timeline />
+      <Cultura />
     </>
   );
 }
