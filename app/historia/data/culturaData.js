@@ -1,4 +1,4 @@
-export const timelineData = [
+export const culturaData = [
   {
     periodo: "Antes del siglo XVI",
     titulo: "Pobladores Originarios",
