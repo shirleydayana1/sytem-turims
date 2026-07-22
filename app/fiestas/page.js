@@ -3,7 +3,7 @@ import styles from "./fiestas.module.css";
 import Hero from "./components/Hero";
 import Introduccion from "./components/Introduccion";
 import Actividades from "./components/Actividades";
-import Timeline from "./components/Timeline";
+import Timeline from "./components/TimeLine";
 import Galeria from "./components/Galeria";
 import Cta from "./components/Cta";
 
