@@ -32,7 +32,7 @@ const experiencias = [
 const lugares = [
   {
     nombre: "Plaza de Armas de Celendín",
-    zona: "",
+    zona: "Plaza de Armas de Celendín",
     tipo: "Arquitectura",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/01-plaza-de-armas.jpg",
@@ -41,7 +41,7 @@ const lugares = [
   },
   {
     nombre:"Iglesia Virgen del Carmen",
-    zona: "",
+    zona: "Iglesia Virgen del Carmen",
     tipo: "Patrimonio",
     distancia: "Centro de la ciudad",
     imagen: "/turismo/02-iglesia-virgen-carmen.jpg",
@@ -50,7 +50,7 @@ const lugares = [
   },
   {
     nombre:"Mirador San Isidro",
-    zona: "",
+    zona: "Mirador San Isidro",
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
     imagen: "/turismo/03-mirador-san-isidro.jpg",
@@ -59,7 +59,7 @@ const lugares = [
   },
   {
     nombre:"Cerro Jelij",
-    zona: "",
+    zona: "Cerro Jelij",
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
     imagen: "/turismo/04-cerro-jelij.jpg",
@@ -68,7 +68,7 @@ const lugares = [
   },
   {
     nombre: "Cascada La Novia",
-    zona: "",
+    zona: "Cascada La Novia",
     tipo: "Cascada",
     distancia: "Aproximadamente 5 km",
     imagen: "/turismo/05-cascada-la-novia.jpg",
@@ -77,7 +77,7 @@ const lugares = [
   },
   {
     nombre: "Caídas de Agua Langascocha",
-    zona: "",
+    zona: "Caídas de Agua Langascocha",
     tipo: "Aventura",
     distancia: "Aproximadamente 8 km",
     imagen: "/turismo/06-langascocha.jpg",
@@ -85,10 +85,6 @@ const lugares = [
       "hermosas caidas de agua rodeadas de abundante vegetacion, ideales para caminatas, fotografia y disfrutar de la naturaleza"
   },
 ];
-
-
-
-
 
 export default function Turismo() {
   return (
@@ -232,12 +228,6 @@ export default function Turismo() {
 
               <h2>Lugares Turísticos Destacados</h2>
             </div>
-
-            <p>
-              Conoce atractivos urbanos, culturales y naturales de Celendín.
-              Cada lugar conserva una parte de la historia y belleza de la
-              provincia.
-            </p>
           </div>
 
           <div className={styles.placesGrid}>
