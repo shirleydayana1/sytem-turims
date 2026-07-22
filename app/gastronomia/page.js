@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./gastronomia.module.css";
 
 const platos = [
@@ -44,7 +45,7 @@ const platos = [
       "Producto elaborado con leche de la región. Destaca por su textura, sabor y presencia en numerosos platos y desayunos tradicionales.",
   },
   {
-    nombre: "Quesillo con miel ",
+    nombre: "Quesillo con Miel ",
     categoria: "Sabor campesino",
     imagen: "/images/gastronomia/quesillo.jpg",
     descripcion:
@@ -69,19 +70,19 @@ const platos = [
 const caracteristicas = [
   {
     icono: "",
-    titulo: "Ingredientes locales",
+    titulo: "Ingredientes Locales",
     texto:
       "Maíz, papa, mote, hierbas aromáticas, queso y productos cultivados en la región.",
   },
   {
     icono: "",
-    titulo: "Tradición quesera",
+    titulo: "Tradición Quesera",
     texto:
       "Cajamarca es reconocida por sus quesos, quesillos y derivados elaborados con leche.",
   },
   {
     icono: "",
-    titulo: "Recetas familiares",
+    titulo: "Recetas Familiares",
     texto:
       "Preparaciones transmitidas entre generaciones y presentes en fiestas y reuniones.",
   },
@@ -97,15 +98,19 @@ export default function GastronomiaPage() {
   return (
     <main className={styles.pagina}>
       <section className={styles.hero}>
-        <img
-          src="/images/gastronomia/portada-gastronomia.jpg"
-          alt="Gastronomía tradicional de Celendín y Cajamarca"
-          className={styles.heroImagen}
-        />
 
-        <div className={styles.heroOverlay} />
+      <Image
+        src="/images/portadas/chicharron-portada.jpg"
+        alt="Portada de la gastronomía de Celendín"
+        fill
+        priority
+        sizes="100vw"
+        className={styles.heroImagen}
+      />
 
-        <div className={styles.heroContenido}>
+      <div className={styles.heroOverlay} />
+      <div className={styles.heroContenido}>
+
           <span className={styles.etiqueta}>Sabores de nuestra tierra</span>
 
           <h1>
@@ -150,7 +155,7 @@ export default function GastronomiaPage() {
       <section id="platos" className={styles.seccionPlatos}>
         <div className={styles.encabezado}>
           <span>Platos y productos regionales</span>
-          <h2>Gastronomía tradicional</h2>
+          <h2>Gastronomía Tradicional</h2>
           <p>
             Conoce algunas de las preparaciones y productos más apreciados
             en Celendín y la región Cajamarca.
@@ -161,10 +166,12 @@ export default function GastronomiaPage() {
           {platos.map((plato) => (
             <article className={styles.tarjeta} key={plato.nombre}>
               <div className={styles.imagenContenedor}>
-                <img
+                <Image
                   src={plato.imagen}
                   alt={plato.nombre}
-                  loading="lazy"
+                  fill
+                  priority
+                  sizes="100vw"
                   className={styles.imagen}
                 />
 
@@ -192,9 +199,6 @@ export default function GastronomiaPage() {
           </p>
         </div>
 
-        <a href="/contactanos" className={styles.botonOscuro}>
-          Contáctanos
-        </a>
       </section>
     </main>
   );

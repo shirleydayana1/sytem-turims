@@ -31,7 +31,6 @@ const experiencias = [
 
 const lugares = [
   {
-
     nombre: "Plaza de Armas de Celendín",
     zona: "Plaza de Armas de Celendín",
     tipo: "Arquitectura",
@@ -41,7 +40,6 @@ const lugares = [
       "El corazón de Celendín, rodeado de jardines, árboles, construcciones tradicionales y espacios de encuentro.",
   },
   {
-
     nombre:"Iglesia Virgen del Carmen",
     zona: "Iglesia Virgen del Carmen",
     tipo: "Patrimonio",
@@ -51,18 +49,16 @@ const lugares = [
       "Uno de los edificios más representativos de Celendín por su arquitectura, historia e importancia religiosa.",
   },
   {
-
     nombre:"Mirador San Isidro",
     zona: "Mirador San Isidro",
     tipo: "Mirador",
     distancia: "Aproximadamente 1 km",
     imagen: "/turismo/03-mirador-san-isidro.jpg",
     descripcion:
-      "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
+     "Un espacio elevado desde donde se puede contemplar la ciudad, sus calles y las montañas que la rodean.",
   },
   {
-
-    nombre:"Cerro Jelij",
+    nombre: "Cerro Jelij",
     zona: "Cerro Jelij",
     tipo: "Naturaleza",
     distancia: "Aproximadamente 10 km",
@@ -77,7 +73,7 @@ const lugares = [
     distancia: "Aproximadamente 5 km",
     imagen: "/turismo/05-cascada-la-novia.jpg",
     descripcion:
-      "Una caída de agua cuyo movimiento recuerda la forma del vestido de una novia, especialmente en época de lluvias.",
+     "Una caída de agua cuyo movimiento recuerda la forma del vestido de una novia, especialmente en época de lluvias.",
   },
   {
     nombre: "Caídas de Agua Langascocha",
@@ -130,11 +126,6 @@ export default function Turismo() {
             </Link>
           </div>
         </div>
-
-        <a href="#presentacion" className={styles.scrollIndicator}>
-          <span />
-          Desliza para descubrir
-        </a>
       </section>
 
       <section id="presentacion" className={styles.presentation}>
@@ -262,7 +253,6 @@ export default function Turismo() {
 
                   <div className={styles.cardFooter}>
                     <span> {lugar.distancia}</span>
-                    <span className={styles.cardArrow}>↗</span>
                   </div>
                 </div>
               </article>
@@ -333,7 +323,7 @@ export default function Turismo() {
         <div className={styles.ctaContent}>
           <span>Vive una experiencia inolvidable</span>
 
-          <h2>Celendín te espera</h2>
+          <h2>Celendín te Espera</h2>
 
           <p>
             Descubre sus paisajes, comparte con su gente y conoce las
